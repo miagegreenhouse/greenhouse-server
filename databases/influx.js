@@ -4,8 +4,9 @@ const DATABASE_SCHEMA = [
     {
         measurement: env.influx.DATABASE_MEASURMENT,
         fields: {
-            path: Influx.FieldType.STRING,
-            duration: Influx.FieldType.INTEGER
+            series: Influx.FieldType.STRING,
+            time: Influx.FieldType.STRING,
+            value: Influx.FieldType.STRING,
         },
         tags: [
             'sensor'
@@ -14,11 +15,13 @@ const DATABASE_SCHEMA = [
 ];
 let influx = null;
 
-function connect() {
+function getDatabase() {
+    if(influx != null) return influx;
     influx = new Influx.InfluxDB({
         host: env.influx.DATABASE_HOST,
         database: env.influx.DATABASE_NAME,
-        schema: DATABASE_SCHEMA
+        schema: DATABASE_SCHEMA,
+        port: env.influx.DATABASE_PORT
     });
 
     influx.getDatabaseNames().then((names) => {
@@ -28,7 +31,7 @@ function connect() {
     }).catch(err => {
         console.error(`Error creating Influx database!`, err);
     });
+    return influx
 }
 
-module.exports.influx = influx;
-module.exports.connect = connect;
+module.exports.getDatabase = getDatabase;

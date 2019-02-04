@@ -1,10 +1,14 @@
 const express = require('express');
 const http = require('http');
+const env = require('./environnement/env');
 const app = express();
-require('./databases/influx').connect();
 
-require('./api_rest');
+const api = require('./api_rest');
 
-http.createServer(app).listen(3000, function () {
-    console.log('Listening on port 3000')
+app.use('/', api);
+
+http.createServer(app).listen(env.port, function () {
+    console.log(`Listening on port ${env.port}`)
+
+
 });
