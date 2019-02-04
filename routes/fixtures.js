@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const csv_parser = require("csv-parser");
-const database = require('../databases/influx');
+const database = require('../databases/influx').influx;
 const env = require('../environnement/env');
 
 
