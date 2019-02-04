@@ -1,0 +1,9 @@
+{
+  "name": "greenhouse-server",
+  "version": "0.0.1",
+  "dependencies": {
+    "csv-parser": "^2.1.0",
+    "express": "latest",
+    "influx": "latest"
+  }
+}
