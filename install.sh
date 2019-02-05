@@ -15,6 +15,8 @@ else
         curl -sL https://deb.nodesource.com/setup_10.x | bash - &&
         apt install nodejs && 
 
+        cd $DIR &&
+
         npm install -g nodemon && npm i &&
         cp $DIR/supervisor/greenhouse_server.conf /etc/supervisor/conf.d/greenhouse_server.conf
     else
