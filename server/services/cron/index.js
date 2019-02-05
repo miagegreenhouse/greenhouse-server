@@ -10,7 +10,7 @@ const logger = require("../../logger");
 module.exports = function (mongoDb) {
     logger.info("Running Cron Task");
     startTask(mongoDb);
-    cron.schedule(`${config.cron.INTERVAL} * * * * *`, () => {
+    cron.schedule(config.cron.pattern, () => {
         startTask(mongoDb);
     }, {
         scheduled: true,
@@ -41,12 +41,16 @@ function influxTaskCron(sensorsDataCtrl, timestamp) {
                 Promise.all(promises).then(() => {
                     logger.info(`New influxDb data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp/1000000).format()}`)
                     resolve(dataToInsert);
+                }).catch((err) => {
+                    reject(err)
                 });
             } else {
                 const err = 'Error Influx Task Cron : incorrect response from influx database';
                 logger.error(err);
                 reject(new Error(err))
             }
+        }).catch((err) => {
+            reject(err)
         });
     });
 }
@@ -65,32 +69,38 @@ function myFoodTaskCron(sensorsDataCtrl, timestamp) {
                     'Accept': 'application/json'
                 },
         };
-        request(requestOption, function (err, resp, body) {
-            // Insert in MongoDB values
-            const result = JSON.parse(Buffer.from(body.toJSON()).toString('utf8'));
-            if (result instanceof Array) {
-                const dataToInsert = result.map((entry) => {
-                    return {
-                        sensor: entry.sensor,
-                        time: moment(entry.captureDate).unix() * 1000000,
-                        value: entry.value,
-                        dataSource: DataSourceEnum.MyFood,
-                    }
-                }).filter((entry) => entry.time > timestamp);
-                const promises = [];
-                dataToInsert.forEach((row) => {
-                    promises.push(sensorsDataCtrl.insertPromise(row));
-                });
-                Promise.all(promises).then(() => {
-                    logger.info(`New MyFood data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp/1000000).format()}`);
-                    resolve(dataToInsert)
-                });
-            } else {
-                const err = 'Error MyFood Task Cron : incorrect response from MyFood API';
-                logger.error(err);
-                reject(new Error(err))
-            }
-        })
+        try {
+            request(requestOption, function (err, resp, body) {
+                // Insert in MongoDB values
+                const result = JSON.parse(Buffer.from(body.toJSON()).toString('utf8'));
+                if (result instanceof Array) {
+                    const dataToInsert = result.map((entry) => {
+                        return {
+                            sensor: entry.sensor,
+                            time: moment(entry.captureDate).unix() * 1000000,
+                            value: entry.value,
+                            dataSource: DataSourceEnum.MyFood,
+                        }
+                    }).filter((entry) => entry.time > timestamp);
+                    const promises = [];
+                    dataToInsert.forEach((row) => {
+                        promises.push(sensorsDataCtrl.insertPromise(row));
+                    });
+                    Promise.all(promises).then(() => {
+                        logger.info(`New MyFood data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp/1000000).format()}`);
+                        resolve(dataToInsert)
+                    }).catch((err) => {
+                        reject(err)
+                    });
+                } else {
+                    const err = 'Error MyFood Task Cron : incorrect response from MyFood API';
+                    logger.error(err);
+                    reject(new Error(err))
+                }
+            });
+        } catch (err) {
+            reject(err)
+        }
     });
 }
 
