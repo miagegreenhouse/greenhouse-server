@@ -14,10 +14,17 @@ class Sensors extends ControllerBase {
 
   getLastTimeStamp() {
     let q = Q.defer();
-    this.dao.findOne({active:true}).sort({time:-1}).exec((err, data) => {
-      if(err) q.reject(err);
-      else q.resolve(data.time);
-    });
+    this.dao.findOne({active:true}, (err, data) => {
+        if(err) q.reject(err);
+        else {
+          if(data){
+            q.resolve(data.time)
+          }
+          else{
+            q.resolve(0)
+          }
+        }
+    }).sort({time:-1});
     return q.promise
   }
 }
