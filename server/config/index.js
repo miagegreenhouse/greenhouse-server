@@ -9,6 +9,6 @@ module.exports = {
     dbName 		: process.env.MONGO_DBNAME || 'greenhouse'
   },
   sendgrid: {
-    // apiKey: process.env.SENDGRID_APIKEY || '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'
+    apiKey: process.env.SENDGRID_APIKEY || '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'
   }
 };
