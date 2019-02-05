@@ -46,17 +46,17 @@ function myFoodTaskCron(mongoDb) {
       headers:
         {
           'Cache-Control': 'no-cache',
-          'Content-Type': 'application/json'
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
         },
     };
-    console.log('******************')
+    console.log('******************');
     request(requestOption, function (err, resp, body) {
       // Insert in MongoDB values
-      const result = body.toJSON()
-      console.log('Body', body.toJSON())
+      const result = body.toJSON();
+      console.log('Body',result);
       if(result instanceof Array) {
           const dataToInsert = result.map( (entry) => {
-            console.log(entry)
+            console.log(entry);
               return {sensor : entry.sensor, time : captureDate.captureDate.getNanoTime(), value : entry.value, datasource : DataSourceEnum.myfood, active : true}
           });
           const promises = [];
