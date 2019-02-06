@@ -12,10 +12,10 @@ var userCtrl = new userController(mongoose);
 
 module.exports = function(app, mongodb) {
 
-  if (process.env.NAME != "production" && process.env.NAME != "development") {
+  if (process.env.NAME === "production" || process.env.NAME === 'development') {
     logger.info("- local environment -");
     logger.info("setting up static files");
-    app.use('/',                  express.static(path.join(__dirname, '../../greenhouse-app/dist')));
+    app.use('/',                  express.static(path.join(__dirname, '../../greenhouse-app/www')));
   } else {
     app.get('/', (req, res, next) => {
       return res.status(200).send("OK");

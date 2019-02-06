@@ -3,14 +3,15 @@
 const express = require('express');
 var app = express();
 const serverExpress = require('http').Server(app);
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+const bodyParser    = require('body-parser');
+const mongoose      = require('mongoose');
+const logger        = require('./logger');
+const config        = require('./config');
+const messaging     = require('./services/messaging');
+const Q             = require('q');
+require('dotenv').config()
 const mongooseProvider = require('./mongooseProvider');
-const logger = require('./logger');
-const config = require('./config');
 const cron = require('./services/cron/index');
-const messaging = require('./services/messaging');
-const Q = require('q');
 
 var boot = function (config) {
     let deferred = Q.defer();
