@@ -9,7 +9,7 @@ else
     if [ $1 == "local" ] || [ $1 == "dev" ] || [ $1 == "prod" ]
     then
         DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-        cat $DIR/server/environments/$1.env > .env &&
+        cp $DIR/server/environments/$1.env $DIR/.env &&
         
         apt install curl &&
         curl -sL https://deb.nodesource.com/setup_10.x | bash - &&
