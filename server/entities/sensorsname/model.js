@@ -4,14 +4,15 @@ const _ = require('underscore');
 const BaseFields = require('../BaseFields');
 
 const fields = _.extend(_.clone(BaseFields), {
-    sensorid: {type: Number, required: true},
-    time: {type: String, required: false, default : null},
-    value: {type: String, required: false, default: null},
+    sensor: {type: String, required: true},
+    dataSource: {type: Number, required: true},
+    unit: {type: String, required: true, default : ""},
+    sensorName: {type: String, required: false, default : null},
     active: {type: Boolean, required: false, default: true}
 });
 
 const schema = new mongoose.Schema(fields);
 
 module.exports = function (mongoose) {
-    return mongoose.model('sensorsdata', schema);
+    return mongoose.model('sensorsname', schema);
 };
