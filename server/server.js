@@ -13,6 +13,8 @@ require('dotenv').config()
 const mongooseProvider = require('./mongooseProvider');
 const cron = require('./services/cron/index');
 
+console.log(process.env.NAME);
+
 var boot = function (config) {
     let deferred = Q.defer();
     mongooseProvider(config.mongodb.host, config.mongodb.port, config.mongodb.dbName, config.mongodb.user, config.mongodb.password, (err, res) => {
