@@ -113,16 +113,7 @@ function updateWebSocket(datasources) {
     logger.info(`Starting to update webSockets`);
     if (messaging.connections.length > 0) {
         logger.info('Number of connections', messaging.connections.length);
-        const promises = [];
-        messaging.connections.forEach((connection) => {
-            promises.push(messaging.send( connection.socket, datasources));
-        });
-        Promise.all(promises).then(() => {
-            logger.info(`New data sended to ${messaging.connections.length} clients instances`)
-            resolve(datasources);
-        }).catch((err) => {
-            reject(err)
-        });
+        messaging.broadcast('message', datasources);
     }
 }
 

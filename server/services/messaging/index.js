@@ -14,8 +14,10 @@ class SocketService {
 
   listen(serverInstance) {
     this.wss = new io(serverInstance);
-    logger.info('socket initializing');
+    logger.info('Socket initializing');
+
     this.wss.on('connection', (ws) => {
+      ws.emit('message', 'OK');
       this.onConnection(ws);
     });
   }
@@ -76,6 +78,10 @@ class SocketService {
     ws.emit('message', {data: message});
   }
 
+  broadcast(message, dataSource){
+    logger.info('Data Broadcasting');
+    this.wss.sockets.emit(message, dataSource);
+  }
 
   onDisconnect(currentConnection) {
     logger.info('messaging::onDisconnect');
