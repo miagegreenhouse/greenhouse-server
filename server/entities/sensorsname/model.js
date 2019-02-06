@@ -6,7 +6,7 @@ const BaseFields = require('../BaseFields');
 const fields = _.extend(_.clone(BaseFields), {
     sensor: {type: String, required: true},
     dataSource: {type: Number, required: true},
-    unit: {type: String, required: true, default : ""},
+    unit: {type: String, required: false, default : ""},
     sensorName: {type: String, required: false, default : null},
     active: {type: Boolean, required: false, default: true}
 });

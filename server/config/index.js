@@ -2,10 +2,10 @@ module.exports = {
   port : process.env.PORT || 3000,
   host : process.env.HOST || 'localhost',
   cron : {
-    pattern : '*/15 * * * *'
+    timer : 15
   },
   MyFood : {
-    id : 72
+    id : 109
   },
   mongodb : {
     host 		: process.env.MONGO_HOST || '127.0.0.1',
