@@ -10,6 +10,9 @@ const logger        = require('./logger');
 const config        = require('./config');
 const messaging     = require('./services/messaging');
 const Q             = require('q');
+require('dotenv').config();
+
+console.log(process.env.NAME);
 
 var boot = function (config) {
   let deferred = Q.defer();
