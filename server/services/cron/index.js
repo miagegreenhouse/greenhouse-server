@@ -30,12 +30,11 @@ function createNewSensors(sensorsNameCtrl, entry, dataSource, sensorsList) {
         if (dataSource === DataSourceEnum.MyFood) {
             entity.sensor = entry.sensor;
             entity.sensorName = entry.sensor;
-        }
-        else if (dataSource === DataSourceEnum.influxDb) {
+        } else if (dataSource === DataSourceEnum.influxDb) {
             entity.sensor = entry.series;
-            entity.sensorName= entry.series;
+            entity.sensorName = entry.series;
         }
-        if (entity.sensor){
+        if (entity.sensor) {
             sensorsList.push(entity);
             sensorsNameCtrl.insertPromise(entity)
                 .then((result) => resolve({result, entry}))
@@ -54,14 +53,14 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                 result.forEach((entry) => {
                     //find sensor object in database
                     const sensor = sensorsList.find((sensor) => sensor.sensor === entry.series
-                                                                && sensor.dataSource === DataSourceEnum.influxDb);
+                        && sensor.dataSource === DataSourceEnum.influxDb);
                     if (!sensor) {
                         // if sensor do not exist, create new entry in database
                         promises.push(createNewSensors(sensorsNameCtrl, entry, DataSourceEnum.influxDb, sensorsList))
                     } else {
                         dataToInsert.push({
-                            sensorid : sensor.id, // can be undefined if a sensor is not inserted yet
-                            sensor : entry.series, // property used for data reprocessing, will be cleaned
+                            sensorid: sensor.id, // can be undefined if a sensor is not inserted yet
+                            sensor: entry.series, // property used for data reprocessing, will be cleaned
                             time: entry.time.getNanoTime(),
                             value: entry.value,
                             active: true
@@ -76,13 +75,13 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                         const databaseSensor = item.result;
                         const entry = item.entry;
                         dataToInsert.push({
-                            sensorid : databaseSensor.id,
+                            sensorid: databaseSensor.id,
                             time: entry.time.getNanoTime(),
                             value: entry.value,
                             active: true
                         });
                         dataToInsert = dataToInsert.map((sensor) => {
-                            if( sensor.sensorid === undefined && sensor.sensor === databaseSensor.sensor){
+                            if (sensor.sensorid === undefined && sensor.sensor === databaseSensor.sensor) {
                                 sensor.sensorid = databaseSensor.id
                             }
                             return sensor;
@@ -100,8 +99,8 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                     });
                     // Success callback
                     Promise.all(promises).then(() => {
-                        if(newSensorCount) logger.info(`New sensors inserted from influxDb into mongodb : ${newSensorCount} new rows since ${moment(timestamp / 1000000).format()}`);
-                        if(promises.length) logger.info(`New InfluxDb data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp / 1000000).format()}`);
+                        if (newSensorCount) logger.info(`New sensors inserted from influxDb into mongodb : ${newSensorCount} new rows since ${moment(timestamp / 1000000).format()}`);
+                        if (promises.length) logger.info(`New InfluxDb data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp / 1000000).format()}`);
                         resolve(dataToInsert)
                     }).catch((err) => reject(err));
                 }).catch((err) => reject(err));
@@ -138,7 +137,7 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                     if (result instanceof Array) {
                         result.forEach((entry) => {
                             entry.time = moment(entry.captureDate).valueOf() * 1000000;
-                            if(entry.time > timestamp){
+                            if (entry.time > timestamp) {
                                 //find sensor object in database
                                 const sensor = sensorsList.find((sensor) => sensor.sensor === entry.sensor
                                     && sensor.dataSource === DataSourceEnum.MyFood);
@@ -147,8 +146,8 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                                     promises.push(createNewSensors(sensorsNameCtrl, entry, DataSourceEnum.MyFood, sensorsList))
                                 } else {
                                     dataToInsert.push({
-                                        sensorid : sensor.id, // can be undefined if a sensor is not inserted yet
-                                        sensor : entry.sensor, // property used for data reprocessing, will be cleaned
+                                        sensorid: sensor.id, // can be undefined if a sensor is not inserted yet
+                                        sensor: entry.sensor, // property used for data reprocessing, will be cleaned
                                         time: entry.time,
                                         value: entry.value,
                                         active: true
@@ -163,13 +162,13 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                                 const databaseSensor = item.result;
                                 const entry = item.entry;
                                 dataToInsert.push({
-                                    sensorid : databaseSensor.id,
+                                    sensorid: databaseSensor.id,
                                     time: entry.time,
                                     value: entry.value,
                                     active: true
                                 });
                                 dataToInsert = dataToInsert.map((sensor) => {
-                                    if( sensor.sensorid === undefined && sensor.sensor === databaseSensor.sensor){
+                                    if (sensor.sensorid === undefined && sensor.sensor === databaseSensor.sensor) {
                                         sensor.sensorid = databaseSensor.id
                                     }
                                     return sensor;
@@ -187,8 +186,8 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                             });
                             // Success callback
                             Promise.all(promises).then(() => {
-                                if(newSensorCount) logger.info(`New sensors inserted from MyFood into mongodb : ${newSensorCount} new rows since ${moment(timestamp / 1000000).format()}`);
-                                if(promises.length) logger.info(`New MyFood data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp / 1000000).format()}`);
+                                if (newSensorCount) logger.info(`New sensors inserted from MyFood into mongodb : ${newSensorCount} new rows since ${moment(timestamp / 1000000).format()}`);
+                                if (promises.length) logger.info(`New MyFood data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp / 1000000).format()}`);
                                 resolve(dataToInsert)
                             }).catch((err) => reject(err));
                         }).catch((err) => reject(err));
@@ -227,7 +226,7 @@ function startTask(mongoDb) {
         promises.push(myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, result[0], result[1]));
         Promise.all(promises).then((dataSources) => {
             const total = dataSources.map((dataSource) => dataSource.length).reduce((a, b) => a + b, 0);
-            if(total) {
+            if (total) {
                 logger.info(`Success Cron Task : Total of ${total} new data since ${moment(result[1] / 1000000).format()}`);
                 updateWebSocket(dataSources)
             }
