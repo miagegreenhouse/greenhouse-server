@@ -10,7 +10,7 @@ const config        = require('./config');
 const messaging     = require('./services/messaging');
 const Q             = require('q');
 const path          = require('path');
-require('dotenv').config({ path: path.join('.', '.env') });
+require('dotenv').config({ path: path.join(__dirname, '../.env') });
 const mongooseProvider = require('./mongooseProvider');
 const cron = require('./services/cron/index');
 
