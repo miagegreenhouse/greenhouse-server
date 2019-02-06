@@ -4,7 +4,7 @@ const database = require('../databases/influx').getDatabase();
 const env = require('../environnement/env');
 
 
-router.get('/populate', async function (req, res, next) {
+router.get('/populate/influx', async function (req, res, next) {
     req.setTimeout(0);
     let data = require('../fixtures/fixtures');
     if (data instanceof Array) {

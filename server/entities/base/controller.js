@@ -19,6 +19,15 @@ class EntityBase {
       cb(null, entities);
     });
   }
+  allPromise() {
+    let q = Q.defer();
+    logger.debug("[" + this.name + ".baseController] find all");
+    this.dao.find(getParams, (err, entities) => {
+      if (err) q.reject(err);
+      q.resolve(entities);
+    });
+    return q.promise;
+  }
 
   findById(id, cb) {
     logger.debug("[" + this.name + ".baseController] findById, id: " + id);

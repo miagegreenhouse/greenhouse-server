@@ -10,7 +10,7 @@ const userController  = require('./entities/user/controller');
 
 var userCtrl = new userController(mongoose);
 
-module.exports = function(app, db) {
+module.exports = function(app, mongodb) {
 
   if (process.env.NAME === "production" || process.env.NAME === 'development') {
     logger.info("- local environment -");
@@ -40,11 +40,11 @@ module.exports = function(app, db) {
   logger.info("setting up authentication");
 
   // initialize authentication
-	const oauth = require('./oauth')(db);
+	const oauth = require('./oauth')(mongodb);
 	app.oauth   = oauth.server;
 
   const Auth = require('./authentication');
-  var auth = new Auth(db);
+  var auth = new Auth(mongodb);
 
   app.all('/api/token', (req, response, next) => {
     logger.info("POST : " + req.originalUrl);
@@ -209,4 +209,4 @@ module.exports = function(app, db) {
   app.use('/public', publicR.router);
 
 
-}
+};
