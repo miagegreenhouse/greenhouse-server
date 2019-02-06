@@ -19,10 +19,9 @@ var boot = function (config) {
             logger.error(err);
             deferred.reject(err);
         } else {
-            logger.info("Running Cron Task");
-            cron(mongoose);
-
             logger.info("Setting up app config");
+
+            cron(mongoose);
 
             app.use(bodyParser.json());
             app.use(bodyParser.urlencoded({extended: true}));
