@@ -209,6 +209,10 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
 
 function updateWebSocket(datasources) {
     logger.info(`Starting to update webSockets`);
+    if (messaging.connections.length > 0) {
+        logger.info('Number of connections', messaging.connections.length);
+        messaging.broadcast('message', datasources);
+    }
 }
 
 function startTask(mongoDb) {
