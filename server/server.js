@@ -9,7 +9,8 @@ const logger        = require('./logger');
 const config        = require('./config');
 const messaging     = require('./services/messaging');
 const Q             = require('q');
-require('dotenv').config()
+const path          = require('path');
+require('dotenv').config({ path: path.join(__dirname, '../.env') });
 const mongooseProvider = require('./mongooseProvider');
 const cron = require('./services/cron/index');
 
