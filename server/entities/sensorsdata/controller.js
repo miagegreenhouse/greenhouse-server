@@ -5,7 +5,7 @@ const ControllerBase      = require('../base/controller');
 const Q            = require('q');
 const _            = require('underscore');
 
-class Sensors extends ControllerBase {
+class SensorsData extends ControllerBase {
 
   constructor (db) {
     super('sensorsdata');
@@ -29,6 +29,4 @@ class Sensors extends ControllerBase {
   }
 }
 
-
-
-module.exports = Sensors;
+module.exports = SensorsData;
