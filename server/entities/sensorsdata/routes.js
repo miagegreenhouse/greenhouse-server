@@ -43,7 +43,9 @@ class SensorData extends RouteBase {
           return response.status(err.code || 500).send(err);
         } else {
           logger.info({"response" : "ok", "code" : 200});
-          return response.status(200).send(docs);
+          return response.status(200).send(docs.map((doc)=>{
+              return {id : doc.id, sensorid : doc.sensorid, value : doc.value, time: doc.time}
+          }));
         }
       });
     } else {
@@ -53,7 +55,9 @@ class SensorData extends RouteBase {
           return response.status(err.code || 500).send(err);
         } else {
           logger.info({"Response" : "ok", "code" : 200});
-          return response.status(200).send(docs);
+          return response.status(200).send(docs.map((doc)=>{
+              return {id : doc.id, sensorid : doc.sensorid, value : doc.value, time: doc.time}
+          }));
         }
       });
       logger.info('GET without query params')
