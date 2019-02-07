@@ -2,7 +2,7 @@ module.exports = {
   port : process.env.PORT || 3000,
   host : process.env.HOST || 'localhost',
   cron : {
-    timer : 15
+    timer : 1
   },
   MyFood : {
     id : 109

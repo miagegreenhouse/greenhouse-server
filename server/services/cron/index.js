@@ -9,7 +9,7 @@ const messaging = require('../messaging');
 
 module.exports = function (mongoDb) {
     logger.info("Running Cron Task");
-    startTask(mongoDb);
+    // startTask(mongoDb);
     setInterval(() => {
         logger.info("Running Cron Task");
         startTask(mongoDb)
@@ -219,14 +219,13 @@ function updateWebSocket(dataSources, sensorsList) {
         logger.info('Number of connections', messaging.connections.length);
 
         const data = dataSources.reduce((acc,next) => acc.concat(next));
-        const dataToSend = sensorsList.map((sensor) => {
+        const dataToSend = [sensorsList.map((sensor) => {
             const result = {};
             const id = sensor.id;
             result[id] = data.filter((data) => data.sensorid === id).map((data) => { return {time : data.time, value : data.value}  });
             return result;
-        }).filter((data) => data[Object.keys(data)[0]].length);
-
-        messaging.broadcast(MessageTypeEnum.DATA, dataToSend);
+        }).filter((data) => data[Object.keys(data)[0]].length)];
+        messaging.broadcast('message', {type :MessageTypeEnum.DATA, data: dataToSend});
     }
 }
 
