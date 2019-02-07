@@ -14,9 +14,7 @@ class Router {
     let User			      = require('./user/routes'           );
 
     let user 			      = new User(db);
-
     this.router.use('/users',           user.router           );
-
   }
 
 }
