@@ -9,7 +9,7 @@ const messaging = require('../messaging');
 
 module.exports = function (mongoDb) {
     logger.info("Running Cron Task");
-    // startTask(mongoDb);
+    startTask(mongoDb);
     setInterval(() => {
         logger.info("Running Cron Task");
         startTask(mongoDb)
