@@ -11,10 +11,14 @@ class Router {
 
   init(db) {
 
-    let User			      = require('./user/routes'           );
+    let AdminMail       = require('./adminmail/routes'  );
+    let User			      = require('./user/routes'       );
 
+    let adminMail       = new AdminMail(db);
     let user 			      = new User(db);
-    this.router.use('/users',           user.router           );
+
+    this.router.use('/adminmails',      adminMail.router);
+    this.router.use('/users',           user.router     );
   }
 
 }

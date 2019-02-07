@@ -12,6 +12,8 @@ var userCtrl = new userController(mongoose);
 
 module.exports = function(app, mongodb) {
 
+  // app.use('/',                  express.static(path.join(__dirname, '../../greenhouse-app/www')));
+
   if (process.env.NAME === "production" || process.env.NAME === 'development') {
     logger.info("- local environment -");
     logger.info("setting up static files");
@@ -45,6 +47,15 @@ module.exports = function(app, mongodb) {
 
   const Auth = require('./authentication');
   var auth = new Auth(mongodb);
+
+  // app.all('/*', function(req, res, next) {
+  //   if (req.originalUrl.indexOf('/api') === -1 && req.originalUrl.indexOf('/public') === -1) {
+  //   // Just send the index.html for other files to support HTML5Mode
+  //   res.sendFile(path.join(__dirname, '../../greenhouse-app/www/index.html'));
+  //   } else {
+  //     next();
+  //   }
+  // });
 
   app.all('/api/token', (req, response, next) => {
     logger.info("POST : " + req.originalUrl);
@@ -85,7 +96,7 @@ module.exports = function(app, mongodb) {
 								 headers: {
 									 "Content-Type" : "application/x-www-form-urlencoded"
 								 },
-								 body: "grant_type=password&username=" + encodeURIComponent(req.body.email) + "&password=" + encodeURIComponent(req.body.password) + "&client_id=pickeat_client_id&client_secret=pickeat_client_secret"
+								 body: "grant_type=password&username=" + encodeURIComponent(req.body.email) + "&password=" + encodeURIComponent(req.body.password) + "&client_id=greenhouse_client_id&client_secret=greenhouse_client_secret"
 							 }, (err, res) => {
 								 if (err) return response.status(err.code || 500).send(err);
 								 else {
