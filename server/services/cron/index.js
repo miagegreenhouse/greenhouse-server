@@ -17,6 +17,7 @@ module.exports = function (mongoDb) {
 };
 
 const DataSourceEnum = Object.freeze({MyFood: 0, influxDb: 1});
+const MessageTypeEnum = Object.freeze({DATA: 'data', ALERT: 'alert'});
 
 const influxDb = influxProvider(config.influx.DATABASE_HOST, config.influx.DATABASE_PORT, config.influx.DATABASE_NAME, config.influx.DATABASE_USER, config.influx.DATABASE_PASSWORD);
 
@@ -86,6 +87,9 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                             }
                             return sensor;
                         });
+                        const sensor = sensorsList.find((sensor) => sensor.sensor === entry.series
+                            && sensor.dataSource === DataSourceEnum.influxDb);
+                        sensor.id = databaseSensor.id
                     });
                     // clean data used fo reprocessing
                     dataToInsert = dataToInsert.map((sensor) => {
@@ -173,6 +177,9 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                                     }
                                     return sensor;
                                 });
+                                const sensor = sensorsList.find((sensor) => sensor.sensor === entry.sensor
+                                    && sensor.dataSource === DataSourceEnum.MyFood);
+                                sensor.id = databaseSensor.id
                             });
                             // clean data used fo reprocessing
                             dataToInsert = dataToInsert.map((sensor) => {
@@ -206,11 +213,20 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
     });
 }
 
-function updateWebSocket(datasources) {
+function updateWebSocket(dataSources, sensorsList) {
     logger.info(`Starting to update webSockets`);
     if (messaging.connections.length > 0) {
         logger.info('Number of connections', messaging.connections.length);
-        messaging.broadcast('message', datasources);
+
+        const data = dataSources.reduce((acc,next) => acc.concat(next));
+        const dataToSend = sensorsList.map((sensor) => {
+            const result = {};
+            const id = sensor.id;
+            result[id] = data.filter((data) => data.sensorid === id).map((data) => { return {time : data.time, value : data.value}  });
+            return result;
+        }).filter((data) => data[Object.keys(data)[0]].length);
+
+        messaging.broadcast(MessageTypeEnum.DATA, dataToSend);
     }
 }
 
@@ -221,14 +237,16 @@ function startTask(mongoDb) {
     promises.push(sensorsNameCtrl.allPromise());
     promises.push(sensorsDataCtrl.getLastTimeStamp());
     Promise.all(promises).then((result) => {
+        const sensorList = result[0];
+        const timestamps = result[1];
         promises = [];
-        promises.push(influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, result[0], result[1]));
-        promises.push(myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, result[0], result[1]));
+        promises.push(influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorList, timestamps));
+        promises.push(myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorList, timestamps));
         Promise.all(promises).then((dataSources) => {
             const total = dataSources.map((dataSource) => dataSource.length).reduce((a, b) => a + b, 0);
             if (total) {
-                logger.info(`Success Cron Task : Total of ${total} new data since ${moment(result[1] / 1000000).format()}`);
-                updateWebSocket(dataSources)
+                logger.info(`Success Cron Task : Total of ${total} new data since ${moment(timestamps / 1000000).format()}`);
+                updateWebSocket(dataSources,sensorList)
             }
         }).catch((err) => logger.error('Error Task Cron', err));
     });
