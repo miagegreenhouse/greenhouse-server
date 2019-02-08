@@ -11,13 +11,21 @@ class Router {
 
   init(db) {
 
-  	let User           = require('./user/routes');
-    let SensorData = require('./sensorsdata/routes')
-  	let user           = new User(db);
-    let sensorData = new SensorData(db)
+    let SensorConfig    = require('./sensorsconfig/routes');
+    let SensorData      = require('./sensorsdata/routes');
+    let SensorGroup     = require('./sensorsgroup/routes');
+    let User            = require('./user/routes');
 
-  	this.router.use('/users',            user.publicRouter);
-    this.router.use('/sensorsdata',            sensorData.publicRouter);
+    let sensorConfig    = new SensorConfig(db);
+    let sensorData      = new SensorData(db);
+    let sensorGroup     = new SensorGroup(db);
+  	let user            = new User(db);
+
+    this.router.use('/sensorsconfig',     sensorConfig.publicRouter);
+    this.router.use('/sensorsdata',       sensorData.publicRouter);
+    this.router.use('/sensorsgroup',      sensorGroup.publicRouter);
+    this.router.use('/users',             user.publicRouter);
+
   }
 
 }
