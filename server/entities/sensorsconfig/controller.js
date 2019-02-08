@@ -5,13 +5,13 @@ const ControllerBase      = require('../base/controller');
 const Q            = require('q');
 const _            = require('underscore');
 
-class SensorsName extends ControllerBase {
+class SensorsConfig extends ControllerBase {
 
   constructor (db) {
-    super('sensorsname');
+    super('sensorsconfig');
     this.dao = new Model(db);
   }
 
 }
 
-module.exports = SensorsName;
+module.exports = SensorsConfig;

@@ -46,7 +46,7 @@ class User extends RouteBase {
                    headers: {
                      "Content-Type" : "application/x-www-form-urlencoded"
                    },
-                   body: "grant_type=password&username=" + encodeURIComponent(entity.email) + "&password=" + encodeURIComponent(entity.password) + "&client_id=pickeat_client_id&client_secret=pickeat_client_secret"
+                   body: "grant_type=password&username=" + encodeURIComponent(entity.email) + "&password=" + encodeURIComponent(entity.password) + "&client_id=greenhouse_client_id&client_secret=greenhouse_client_secret"
                  }, (err, res) => {
                    if (err) return response.status(err.code || 500).send(err);
                    else {

@@ -3,7 +3,7 @@ const config = require('../../config/index');
 const request = require('request');
 const moment = require('moment');
 const SensorsDataController = require('../../entities/sensorsdata/controller');
-const SensorsNameController = require('../../entities/sensorsname/controller');
+const SensorsConfigController = require('../../entities/sensorsconfig/controller');
 const logger = require("../../logger");
 const messaging = require('../messaging');
 
@@ -233,7 +233,7 @@ function updateWebSocket(dataSources, sensorsList) {
 
 function startTask(mongoDb) {
     const sensorsDataCtrl = new SensorsDataController(mongoDb);
-    const sensorsNameCtrl = new SensorsNameController(mongoDb);
+    const sensorsNameCtrl = new SensorsConfigController(mongoDb);
     let promises = [];
     promises.push(sensorsNameCtrl.allPromise());
     promises.push(sensorsDataCtrl.getLastTimeStamp());
