@@ -19,8 +19,15 @@ function setup(db) {
         console.log('New groups ', docs.map(doc => doc.sensor));
         const promises = [];
         docs.forEach((doc) => {
-            promises.push(sensorsGroupCtrl.insertPromise({name : doc.sensor}));
-
+            promises.push(new Promise((resolve, reject) => {
+                sensorsGroupCtrl.insertPromise({name : doc.sensor}).then((group) => {
+                    sensorsConfigCtrl.update({_id: doc._id, sensorGroupId: group._id}, (err, res) => {
+                        if (err) reject(err);
+                        else resolve(res);
+                    });
+                })
+                .catch(err => console.error(err));
+            }));
         });
         Promise.all(promises).then((data) => {
             console.log(`Data inserted : ${promises.length} groups created`);
