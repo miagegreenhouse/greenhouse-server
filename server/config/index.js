@@ -12,7 +12,8 @@ module.exports = {
     user 		: process.env.MONGO_USER || null,
     password 	: process.env.MONGO_PASSWORD || null,
     port 		: process.env.MONGO_PORT || '27017',
-    dbName 		: process.env.MONGO_DBNAME || 'greenhouse'
+    dbName 		: process.env.MONGO_DBNAME || 'greenhouse',
+    timeIntervalInMonth : process.env.MONGO_TIMEINTERVALINMONTH || 3
   },
   influx : {
     DATABASE_PORT : process.env.INFLUX_DATABASE_PORT || 8086,

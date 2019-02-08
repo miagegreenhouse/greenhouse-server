@@ -27,27 +27,34 @@ class SensorData extends RouteBase {
     logger.info("GET " + req.originalUrl);
 
     let params = null;
-    const threeMonthDuration = 7948800;
-    let isValidInterval = true;
+    const threeMonthDuration = config.mongodb.timeIntervalInMonth*31*24*60*60*1000;
     // Params definition
     if(req.query != null && req.query.start!= null && req.query.end!=null){
-      if(req.query.end - req.query.start > threeMonthDuration){
-        isValidInterval = false;
+      if(req.query.start > req.query.end){
+        logger.error({"Error" : "Start date couldn't be before end date", "Code" : 413});
+        return response.status(413).send("Start date couldn't be before end date");
       }
-      params = {time: {$gte: req.query.start, $lte: req.query.end}};
+      else if(req.query.end - req.query.start > threeMonthDuration){
+        logger.error({"Error" : "[start date - end date] interval could not exceed " + config.mongodb.timeIntervalInMonth + " months.", "Code" : 413});
+        return response.status(413).send("[start date - end date] interval could not exceed " + config.mongodb.timeIntervalInMonth + " months.");
+      } else{
+        params = {time: {$gte: req.query.start, $lte: req.query.end}};
+      }
     }
     if(req.query!=null && req.query.start!= null && req.query.end==null){
+      const end = req.query.start + threeMonthDuration;
       params = {time: {$gte: req.query.start, $lte: req.query.start + threeMonthDuration}};
     }
     if(req.query!=null && req.query.start== null && req.query.end!=null){
-      params = {time: {$lte: req.query.end, $gte: req.query.end - threeMonthDuration}};
+      const start = req.query.end - threeMonthDuration;
+      console.log('START DATE', moment.unix(start).format("MM/DD/YYYY"));
+      console.log('END DATE', moment.unix(req.query.end).format("MM/DD/YYYY"));
+      params = {time: {$lte: req.query.end, $gte: start}};
     }
     if(req.query.start== null && req.query.end==null){
       params = {time: {$gte: moment().valueOf() - threeMonthDuration}};
     }
-
     if(params){
-      if(isValidInterval){
         this.ctrl.find(params, (err, docs) => {
           if (err) {
             logger.error(err);
@@ -59,10 +66,6 @@ class SensorData extends RouteBase {
             }));
           }
         });
-      } else {
-        logger.error({"Error" : "[start date - end date] interval could not exceed " + " months.", "Code" : 413});
-        return response.status(413).send("[start date - end date] interval could not exceed " + " months.");
-      }
     } else {
       logger.error({"Error" : "Internal error, impossible to return sensor data", "Code" : 500});
       return response.status(500).send("Internal error, impossible to return sensor data");
