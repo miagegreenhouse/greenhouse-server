@@ -7,11 +7,7 @@ const fields = _.extend(_.clone(BaseFields), {
     sensorid: {type: String, required: true},
     time: {type: String, required: false, default : null},
     value: {type: String, required: false, default: null},
-    active: {type: Boolean, required: false, default: true},
-    minThresholdValue: Number,
-    minThresholdAlertMessage: String,
-    maxThresholdValue: Number,
-    maxThresholdAlertMessage: String
+    active: {type: Boolean, required: false, default: true}
 });
 
 const schema = new mongoose.Schema(fields);
