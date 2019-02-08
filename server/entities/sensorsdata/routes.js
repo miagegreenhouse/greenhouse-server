@@ -29,6 +29,8 @@ class SensorData extends RouteBase {
     let params = null;
     const threeMonthDuration = config.mongodb.timeIntervalInMonth*31*24*60*60*1000;
     // Params definition
+    let start;
+    let end;
     if(req.query != null && req.query.start!= null && req.query.end!=null){
       if(req.query.start > req.query.end){
         logger.error({"Error" : "Start date couldn't be before end date", "Code" : 413});
@@ -38,18 +40,20 @@ class SensorData extends RouteBase {
         logger.error({"Error" : "[start date - end date] interval could not exceed " + config.mongodb.timeIntervalInMonth + " months.", "Code" : 413});
         return response.status(413).send("[start date - end date] interval could not exceed " + config.mongodb.timeIntervalInMonth + " months.");
       } else{
-        params = {time: {$gte: req.query.start, $lte: req.query.end}};
+        start = Number(req.query.start);
+        end = Number(req.query.end);
+        params = {time: {$gte: start, $lte: end}};
       }
     }
     if(req.query!=null && req.query.start!= null && req.query.end==null){
-      const end = req.query.start + threeMonthDuration;
-      params = {time: {$gte: req.query.start, $lte: req.query.start + threeMonthDuration}};
+      start = Number(req.query.start);
+      end = Number(req.query.start) + threeMonthDuration;
+      params = {time: {$gte: start, $lte: end}};
     }
     if(req.query!=null && req.query.start== null && req.query.end!=null){
-      const start = req.query.end - threeMonthDuration;
-      console.log('START DATE', moment.unix(start).format("MM/DD/YYYY"));
-      console.log('END DATE', moment.unix(req.query.end).format("MM/DD/YYYY"));
-      params = {time: {$lte: req.query.end, $gte: start}};
+      start = Number(req.query.end) - threeMonthDuration;
+      end = Number(req.query.end);
+      params = {time: {$lte: end, $gte: start}};
     }
     if(req.query.start== null && req.query.end==null){
       params = {time: {$gte: moment().valueOf() - threeMonthDuration}};
@@ -58,7 +62,7 @@ class SensorData extends RouteBase {
         this.ctrl.find(params, (err, docs) => {
           if (err) {
             logger.error(err);
-            return response.status(err.code || 500).send(err);
+            return response.status(err.code || 500).send('Internal error');
           } else {
             logger.info({"Response" : "Ok", "Code" : 200});
             return response.status(200).send(docs.map((doc)=>{
@@ -70,7 +74,6 @@ class SensorData extends RouteBase {
       logger.error({"Error" : "Internal error, impossible to return sensor data", "Code" : 500});
       return response.status(500).send("Internal error, impossible to return sensor data");
     }
-
   }
 }
 

@@ -46,7 +46,7 @@ function createNewSensors(sensorsNameCtrl, entry, dataSource, sensorsList) {
 
 function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp) {
     return new Promise((resolve, reject) => {
-        const influxTimeStamp = timestamp * 100000;
+        const influxTimeStamp = timestamp * 1000000;
         const query = `select * from greenhouse_sensors where time > ${influxTimeStamp}`;
         influxDb.query(query).then(result => {
             if (result instanceof Array) {
@@ -63,7 +63,7 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                         dataToInsert.push({
                             sensorid: sensor.id, // can be undefined if a sensor is not inserted yet
                             sensor: entry.series, // property used for data reprocessing, will be cleaned
-                            time: Math.trunc(entry.time.getNanoTime()/ 100000),
+                            time: Math.trunc(entry.time.getNanoTime()/ 1000000),
                             value: entry.value,
                             active: true
                         });
