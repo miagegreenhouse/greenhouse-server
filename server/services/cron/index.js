@@ -46,7 +46,8 @@ function createNewSensors(sensorsNameCtrl, entry, dataSource, sensorsList) {
 
 function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp) {
     return new Promise((resolve, reject) => {
-        const query = `select * from greenhouse_sensors where time > ${timestamp}`;
+        const influxTimeStamp = timestamp * 100000;
+        const query = `select * from greenhouse_sensors where time > ${influxTimeStamp}`;
         influxDb.query(query).then(result => {
             if (result instanceof Array) {
                 let dataToInsert = [];
@@ -103,8 +104,9 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                     });
                     // Success callback
                     Promise.all(promises).then(() => {
-                        if (newSensorCount) logger.info(`New sensors inserted from influxDb into mongodb : ${newSensorCount} new rows since ${moment(timestamp).format()}`);
-                        if (promises.length) logger.info(`New InfluxDb data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp).format()}`);
+                        const date = moment(timestamp).format();
+                        if (newSensorCount) logger.info(`New sensors inserted from influxDb into mongodb : ${newSensorCount} new rows since ${date}`);
+                        if (promises.length) logger.info(`New InfluxDb data inserted into mongodb : ${promises.length} new rows since ${date}`);
                         resolve(dataToInsert)
                     }).catch((err) => reject(err));
                 }).catch((err) => reject(err));
@@ -193,8 +195,9 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                             });
                             // Success callback
                             Promise.all(promises).then(() => {
-                                if (newSensorCount) logger.info(`New sensors inserted from MyFood into mongodb : ${newSensorCount} new rows since ${moment(timestamp).format()}`);
-                                if (promises.length) logger.info(`New MyFood data inserted into mongodb : ${promises.length} new rows since ${moment(timestamp).format()}`);
+                                const date = moment(timestamp).format();
+                                if (newSensorCount) logger.info(`New sensors inserted from MyFood into mongodb : ${newSensorCount} new rows since ${date}`);
+                                if (promises.length) logger.info(`New MyFood data inserted into mongodb : ${promises.length} new rows since ${date}`);
                                 resolve(dataToInsert)
                             }).catch((err) => reject(err));
                         }).catch((err) => reject(err));
@@ -203,7 +206,6 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                     }
                 } else {
                     const err = 'Error MyFood Task Cron : incorrect response from MyFood API';
-                    logger.error(err);
                     reject(new Error(err))
                 }
             });
@@ -237,7 +239,7 @@ function startTask(mongoDb) {
     promises.push(sensorsDataCtrl.getLastTimeStamp());
     Promise.all(promises).then((result) => {
         const sensorList = result[0];
-        const timestamps = result[1];
+        const timestamps = Number(result[1]);
         promises = [];
         promises.push(influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorList, timestamps));
         promises.push(myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorList, timestamps));
