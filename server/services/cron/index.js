@@ -275,13 +275,9 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
     const adminMailCtrl = new AdminMailController(mongoDb);
     const valuesToCheck = [];
     sensorsConfigList.forEach(sensor => {
-        valuesToCheck.push(data.filter(row => {
-            if (row.sensorid === sensor.id) {
-                if (sensor.minThresholdValue && row.value <= sensor.minThresholdValue) return true;
-                else if (sensor.maxThresholdValue && row.value > sensor.maxThresholdValue) return true;
-                return false
-            }
-            return false
+        valuesToCheck.push(data.filter(doc => {
+                return !!(doc.sensorid === sensor.id && (sensor.minThresholdValue && doc.value <= sensor.minThresholdValue) ||
+                    (sensor.maxThresholdValue && doc.value > sensor.maxThresholdValue));
         }));
     });
 
@@ -318,5 +314,6 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
 }
 
 function sendAlertMail(sensor, value, email) {
+    // todo send mail
     // console.log(sensor);
 }
