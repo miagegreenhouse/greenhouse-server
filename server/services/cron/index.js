@@ -9,6 +9,7 @@ const AdminMailController = require('../../entities/adminmail/controller');
 const logger = require("../../logger");
 const messaging = require('../messaging');
 const crypto = require('crypto');
+const SendGrid = require('../sendgrid/index');
 
 
 module.exports = function (mongoDb) {
@@ -276,8 +277,9 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
     const valuesToCheck = [];
     sensorsConfigList.forEach(sensor => {
         valuesToCheck.push(data.filter(doc => {
-                return !!(doc.sensorid === sensor.id && (sensor.minThresholdValue && doc.value <= sensor.minThresholdValue) ||
-                    (sensor.maxThresholdValue && doc.value > sensor.maxThresholdValue));
+            if(doc.sensorid !== sensor.id) return false;
+            return !!((sensor.minThresholdValue && doc.value <= sensor.minThresholdValue) ||
+                (sensor.maxThresholdValue && doc.value > sensor.maxThresholdValue));
         }));
     });
 
@@ -302,7 +304,10 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
                                 value: value.value,
                                 tokens: tokens,
                                 token: null
-                            }).then(_ => sendAlertMail(sensor, value, mails))
+                            }).then(_ => {
+                                sendAlertMail(sensor, value, mails);
+                                sendAlertWebsocket(sensor, value);
+                            })
                                 .catch(err => logger.error('Error while inserting alert', err));
                         }
                     }).catch(err => logger.error('Error while inserting alert', err));
@@ -313,7 +318,36 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
 
 }
 
-function sendAlertMail(sensor, value, email) {
-    // todo send mail
-    // console.log(sensor);
+function sendAlertMail(sensor, value, emails) {
+    const sendgrid = new SendGrid({apiKey: config.sendgrid.apiKey});
+    const date = moment(value.time).format('');
+    const message = (sensor.maxThresholdValue && value.value > sensor.maxThresholdValue) ||
+                    !(sensor.minThresholdValue && value.value < sensor.minThresholdValue)
+                    ? sensor.maxThresholdAlertMessage : sensor.minThresholdAlertMessage;
+    const promises = [];
+    emails.forEach(email => {
+        const sensorValue = sensor.unit?`${value.value} ${sensor.unit}`:`${value.value}`;
+        const msg = {
+            to: email,
+            from: config.sendgrid.from,
+            subject: `[ALERT] ${sensor.sensorName}`,
+            text: `Date de l'alerte : ${date}\nValeur du capteur : ${sensorValue}\nMessage : ${message}`,
+            html: `Date de l'alerte : ${date}<br/>Valeur du capteur : ${sensorValue}<br/>Message : ${message}`,
+        };
+        promises.push(sendgrid.sendEmailPromise(msg));
+    });
+    Promise.all(promises).then(_ => logger.info(`Alert Notification : ${promises.length} mails sent`))
+        .catch(err => logger.error(err));
+}
+
+function sendAlertWebsocket(sensor, value) {
+    if (messaging.connections.length > 0) {
+        logger.info(`Sending alert to webSockets`);
+        logger.info('Number of connections', messaging.connections.length);
+        messaging.broadcast('message', {
+            type: MessageTypeEnum.ALERT,
+            data: {sensorid: sensor.id, time: value.time, value: value.value}
+        });
+    }
+
 }

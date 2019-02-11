@@ -24,6 +24,7 @@ module.exports = {
     DATABASE_MEASURMENT : process.env.INFLUX_DATABASE_MEASURMENT || "greenhouse_sensors"
   },
   sendgrid: {
+    from : 'ne-pas-repondre@greenhouse.fr',
     apiKey: process.env.SENDGRID_APIKEY || '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'
   }
 };
