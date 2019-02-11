@@ -10,12 +10,14 @@ const Auth                = require('../../authentication');
 const request             = require('request');
 const config              = require('../../config');
 const moment              = require('moment');
+const SensorsConfigController = require('../../entities/sensorsconfig/controller');
 
 class SensorData extends RouteBase {
 
   constructor(db) {
     super(db);
     this.ctrl               = new Controller(db);
+    this.sensorsConfigCtrl  = new SensorsConfigController(db);
     this.auth               = new Auth(db);
   }
 
@@ -65,9 +67,16 @@ class SensorData extends RouteBase {
             return response.status(err.code || 500).send('Internal error');
           } else {
             logger.info({"Response" : "Ok", "Code" : 200});
-            return response.status(200).send(docs.map((doc)=>{
-              return {id : doc.id, sensorid : doc.sensorid, value : doc.value, time: doc.time}
-            }));
+            this.sensorsConfigCtrl.allPromise().then(sensorsList => {
+              const dataToSend = sensorsList.map((sensor) => {
+                const result = {};
+                const id = sensor.id;
+                result[id] = docs.filter((data) => data.sensorid === id).map((data) => { return {time : data.time, value : data.value}  });
+                return result;
+              });
+              return response.status(200).send(dataToSend);
+            }).catch(err => logger.error(err));
+
           }
         });
     } else {
