@@ -301,7 +301,8 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
                                 time: value.time,
                                 value: value.value,
                                 tokens: tokens,
-                                token: null
+                                token: null,
+                                timestampAcknowledgment : null,
                             }).then(alert => {
                                 sendAlertMail(sensor, value, mails, alert);
                                 sendAlertWebsocket(sensor, value);

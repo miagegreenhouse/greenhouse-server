@@ -27,7 +27,7 @@ class Router {
     this.router.use('/sensorsdata',       sensorData.publicRouter);
     this.router.use('/sensorsgroup',      sensorGroup.publicRouter);
     this.router.use('/users',             user.publicRouter);
-    this.router.use('/sensorsalert',      sensorsAlert.router);
+    this.router.use('/sensorsalert',      sensorsAlert.publicRouter);
 
   }
 

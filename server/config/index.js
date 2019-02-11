@@ -23,8 +23,12 @@ module.exports = {
     DATABASE_PASSWORD : process.env.INFLUX_DATABASE_PASSWORD || "",
     DATABASE_MEASURMENT : process.env.INFLUX_DATABASE_MEASURMENT || "greenhouse_sensors"
   },
-  sendgrid: {
+  alerts : {
+    webAppBaseURI : 'http://localhost',
     from : 'ne-pas-repondre@greenhouse.fr',
+    maxHistory : 100
+  },
+  sendgrid: {
     apiKey: process.env.SENDGRID_APIKEY || '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'
   }
 };
