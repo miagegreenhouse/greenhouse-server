@@ -10,12 +10,14 @@ const Auth                = require('../../authentication');
 const request             = require('request');
 const config              = require('../../config');
 const moment              = require('moment');
+const SensorsConfigController = require('../../entities/sensorsconfig/controller');
 
 class SensorData extends RouteBase {
 
   constructor(db) {
     super(db);
     this.ctrl               = new Controller(db);
+    this.sensorsConfigCtrl  = new SensorsConfigController(db);
     this.auth               = new Auth(db);
   }
 
@@ -27,7 +29,7 @@ class SensorData extends RouteBase {
     logger.info("GET " + req.originalUrl);
 
     let params = null;
-    const threeMonthDuration = config.mongodb.timeIntervalInMonth*31*24*60*60*1000;
+    const MaxTimeIntervalRequest = config.mongodb.MaxTimeIntervalRequest*24*60*60*1000;
     // Params definition
     let start;
     let end;
@@ -36,9 +38,9 @@ class SensorData extends RouteBase {
         logger.error({"Error" : "Start date couldn't be before end date", "Code" : 413});
         return response.status(413).send("Start date couldn't be before end date");
       }
-      else if(req.query.end - req.query.start > threeMonthDuration){
-        logger.error({"Error" : "[start date - end date] interval could not exceed " + config.mongodb.timeIntervalInMonth + " months.", "Code" : 413});
-        return response.status(413).send("[start date - end date] interval could not exceed " + config.mongodb.timeIntervalInMonth + " months.");
+      else if(req.query.end - req.query.start > MaxTimeIntervalRequest){
+        logger.error({"Error" : "[start date - end date] interval could not exceed " + config.mongodb.MaxTimeIntervalRequest + " months.", "Code" : 413});
+        return response.status(413).send("[start date - end date] interval could not exceed " + config.mongodb.MaxTimeIntervalRequest + " months.");
       } else{
         start = Number(req.query.start);
         end = Number(req.query.end);
@@ -47,16 +49,16 @@ class SensorData extends RouteBase {
     }
     if(req.query!=null && req.query.start!= null && req.query.end==null){
       start = Number(req.query.start);
-      end = Number(req.query.start) + threeMonthDuration;
+      end = Number(req.query.start) + MaxTimeIntervalRequest;
       params = {time: {$gte: start, $lte: end}};
     }
     if(req.query!=null && req.query.start== null && req.query.end!=null){
-      start = Number(req.query.end) - threeMonthDuration;
+      start = Number(req.query.end) - MaxTimeIntervalRequest;
       end = Number(req.query.end);
       params = {time: {$lte: end, $gte: start}};
     }
     if(req.query.start== null && req.query.end==null){
-      params = {time: {$gte: moment().valueOf() - threeMonthDuration}};
+      params = {time: {$gte: moment().valueOf() - MaxTimeIntervalRequest}};
     }
     if(params){
         this.ctrl.find(params, (err, docs) => {
@@ -65,9 +67,16 @@ class SensorData extends RouteBase {
             return response.status(err.code || 500).send('Internal error');
           } else {
             logger.info({"Response" : "Ok", "Code" : 200});
-            return response.status(200).send(docs.map((doc)=>{
-              return {id : doc.id, sensorid : doc.sensorid, value : doc.value, time: doc.time}
-            }));
+            this.sensorsConfigCtrl.allPromise().then(sensorsList => {
+              const dataToSend = sensorsList.map((sensor) => {
+                const result = {};
+                const id = sensor.id;
+                result[id] = docs.filter((data) => data.sensorid === id).map((data) => { return {time : data.time, value : data.value}  });
+                return result;
+              });
+              return response.status(200).send(dataToSend);
+            }).catch(err => logger.error(err));
+
           }
         });
     } else {

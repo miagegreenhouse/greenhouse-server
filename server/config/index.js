@@ -2,7 +2,7 @@ module.exports = {
   port : process.env.PORT || 3000,
   host : process.env.HOST || 'localhost',
   cron : {
-    timer : 15
+    timer : 15 // Time in minutes
   },
   MyFood : {
     id : 109
@@ -13,7 +13,7 @@ module.exports = {
     password 	: process.env.MONGO_PASSWORD || null,
     port 		: process.env.MONGO_PORT || '27017',
     dbName 		: process.env.MONGO_DBNAME || 'greenhouse',
-    timeIntervalInMonth : process.env.MONGO_TIMEINTERVALINMONTH || 3
+    MaxTimeIntervalRequest : process.env.MaxTimeIntervalRequest || 93 // Number of days
   },
   influx : {
     DATABASE_PORT : process.env.INFLUX_DATABASE_PORT || 8086,
@@ -24,6 +24,7 @@ module.exports = {
     DATABASE_MEASURMENT : process.env.INFLUX_DATABASE_MEASURMENT || "greenhouse_sensors"
   },
   sendgrid: {
+    from : 'ne-pas-repondre@greenhouse.fr',
     apiKey: process.env.SENDGRID_APIKEY || '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'
   }
 };
