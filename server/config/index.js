@@ -2,10 +2,10 @@ module.exports = {
   port : process.env.PORT || 3000,
   host : process.env.HOST || 'localhost',
   cron : {
-    timer : 15 // Time in minutes
+    timer : process.env.CRON_TIMER || 15 // Time in minutes
   },
   MyFood : {
-    id : 109
+    id : process.env.MYFOOD_ID || 109
   },
   mongodb : {
     host 		: process.env.MONGO_HOST || '127.0.0.1',
@@ -24,9 +24,9 @@ module.exports = {
     DATABASE_MEASURMENT : process.env.INFLUX_DATABASE_MEASURMENT || "greenhouse_sensors"
   },
   alerts : {
-    webAppBaseURI : 'http://localhost',
-    from : 'ne-pas-repondre@greenhouse.fr',
-    maxHistory : 100
+    webAppBaseURI : process.env.ALERT_WEBAPPBASE_URI || 'http://localhost',
+    from : process.env.ALERT_FROM ||'ne-pas-repondre@greenhouse.fr',
+    maxHistory : process.env.ALER_MAX_HISTORY || 100
   },
   sendgrid: {
     apiKey: process.env.SENDGRID_APIKEY || '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'
