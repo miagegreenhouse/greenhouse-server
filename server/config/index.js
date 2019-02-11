@@ -4,6 +4,9 @@ module.exports = {
   cron : {
     timer : process.env.CRON_TIMER || 15 // Time in minutes
   },
+  export : {
+    delimiter:  process.env.EXPORT_DELIMITER || ';'
+  },
   MyFood : {
     id : process.env.MYFOOD_ID || 109
   },
