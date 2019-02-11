@@ -4,8 +4,13 @@ const request = require('request');
 const moment = require('moment');
 const SensorsDataController = require('../../entities/sensorsdata/controller');
 const SensorsConfigController = require('../../entities/sensorsconfig/controller');
+const SensorsAlertController = require('../../entities/sensorsalert/controller');
+const AdminMailController = require('../../entities/adminmail/controller');
 const logger = require("../../logger");
 const messaging = require('../messaging');
+const crypto = require('crypto');
+const SendGrid = require('../sendgrid/index');
+
 
 module.exports = function (mongoDb) {
     logger.info("Running Cron Task");
@@ -16,35 +21,67 @@ module.exports = function (mongoDb) {
     }, config.cron.timer * 60 * 1000);
 };
 
-const DataSourceEnum = Object.freeze({MyFood: 0, influxDb: 1});
+const DataSourceEnum = Object.freeze({MyFood: 0, g2elab: 1});
 const MessageTypeEnum = Object.freeze({DATA: 'data', ALERT: 'alert'});
+
+function startTask(mongoDb) {
+    const sensorsDataCtrl = new SensorsDataController(mongoDb);
+    // todo remove
+    sensorsDataCtrl.remove({}, () => {
+    });
+    const sensorsConfigCtrl = new SensorsConfigController(mongoDb);
+    let promises = [];
+    promises.push(sensorsConfigCtrl.allPromise());
+    promises.push(sensorsDataCtrl.getLastTimeStamp());
+    Promise.all(promises).then((result) => {
+        const sensorList = result[0];
+        const timestamps = Number(result[1]);
+        promises = [];
+        promises.push(g2elabTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorList, timestamps));
+        promises.push(myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorList, timestamps));
+        Promise.all(promises).then((dataSources) => {
+            const total = dataSources.map((dataSource) => dataSource.length).reduce((a, b) => a + b, 0);
+            if (total) {
+                logger.info(`Success Cron Task : Total of ${total} new data since ${moment(timestamps).format()}`);
+                const data = dataSources.reduce((acc, next) => acc.concat(next));
+                updateWebSocket(data, sensorList);
+                updateAlert(data, sensorList, mongoDb);
+            }
+        }).catch((err) => logger.error('Error Task Cron', err));
+    });
+}
 
 const influxDb = influxProvider(config.influx.DATABASE_HOST, config.influx.DATABASE_PORT, config.influx.DATABASE_NAME, config.influx.DATABASE_USER, config.influx.DATABASE_PASSWORD);
 
-function createNewSensors(sensorsNameCtrl, entry, dataSource, sensorsList) {
+
+function createNewSensors(sensorsConfigCtrl, entry, dataSource, sensorsList) {
     return new Promise((resolve, reject) => {
         let entity = {
             dataSource: dataSource,
             unit: "",
+            minThresholdValue: null,
+            minThresholdAlertMessage: "",
+            maxThresholdValue: null,
+            maxThresholdAlertMessage: "",
             active: true
         };
         if (dataSource === DataSourceEnum.MyFood) {
             entity.sensor = entry.sensor;
             entity.sensorName = entry.sensor;
-        } else if (dataSource === DataSourceEnum.influxDb) {
+        } else if (dataSource === DataSourceEnum.g2elab) {
             entity.sensor = entry.series;
             entity.sensorName = entry.series;
         }
         if (entity.sensor) {
             sensorsList.push(entity);
-            sensorsNameCtrl.insertPromise(entity)
+            sensorsConfigCtrl.insertPromise(entity)
                 .then((result) => resolve({result, entry}))
                 .catch((err) => reject(err));
         } else reject('Error while adding a new sensor')
     });
 }
 
-function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp) {
+function g2elabTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorsList, timestamp) {
     return new Promise((resolve, reject) => {
         const influxTimeStamp = timestamp * 1000000;
         const query = `select * from greenhouse_sensors where time > ${influxTimeStamp}`;
@@ -55,16 +92,16 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                 result.forEach((entry) => {
                     //find sensor object in database
                     const sensor = sensorsList.find((sensor) => sensor.sensor === entry.series
-                        && sensor.dataSource === DataSourceEnum.influxDb);
+                        && sensor.dataSource === DataSourceEnum.g2elab);
                     if (!sensor) {
                         // if sensor do not exist, create new entry in database
-                        promises.push(createNewSensors(sensorsNameCtrl, entry, DataSourceEnum.influxDb, sensorsList))
+                        promises.push(createNewSensors(sensorsConfigCtrl, entry, DataSourceEnum.g2elab, sensorsList))
                     } else {
                         dataToInsert.push({
                             sensorid: sensor.id, // can be undefined if a sensor is not inserted yet
                             sensor: entry.series, // property used for data reprocessing, will be cleaned
-                            time: Math.trunc(entry.time.getNanoTime()/ 1000000),
-                            value: entry.value,
+                            time: Math.trunc(entry.time.getNanoTime() / 1000000),
+                            value: Number(entry.value.replace(",", ".")),
                             active: true
                         });
                     }
@@ -79,7 +116,7 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                         dataToInsert.push({
                             sensorid: databaseSensor.id,
                             time: Math.trunc(entry.time.getNanoTime() / 1000000),
-                            value: entry.value,
+                            value: Number(entry.value.replace(",", ".")),
                             active: true
                         });
                         dataToInsert = dataToInsert.map((sensor) => {
@@ -89,7 +126,7 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                             return sensor;
                         });
                         const sensor = sensorsList.find((sensor) => sensor.sensor === entry.series
-                            && sensor.dataSource === DataSourceEnum.influxDb);
+                            && sensor.dataSource === DataSourceEnum.g2elab);
                         sensor.id = databaseSensor.id
                     });
                     // clean data used fo reprocessing
@@ -105,13 +142,13 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                     // Success callback
                     Promise.all(promises).then(() => {
                         const date = moment(timestamp).format();
-                        if (newSensorCount) logger.info(`New sensors inserted from influxDb into mongodb : ${newSensorCount} new rows since ${date}`);
-                        if (promises.length) logger.info(`New InfluxDb data inserted into mongodb : ${promises.length} new rows since ${date}`);
+                        if (newSensorCount) logger.info(`New sensors inserted from G2E Lab influxDb into mongodb : ${newSensorCount} new rows since ${date}`);
+                        if (promises.length) logger.info(`New G2E Lab InfluxDb data inserted into mongodb : ${promises.length} new rows since ${date}`);
                         resolve(dataToInsert)
                     }).catch((err) => reject(err));
                 }).catch((err) => reject(err));
             } else {
-                const err = 'Error Influx Task Cron : incorrect response from influx database';
+                const err = 'Error Influx Task Cron : incorrect response from G2E Lab influx database';
                 logger.error(err);
                 reject(new Error(err));
             }
@@ -119,7 +156,7 @@ function influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
     });
 }
 
-function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp) {
+function myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorsList, timestamp) {
     // Retrieve last value timestamp
     // Request data since last timestamp value
     return new Promise((resolve, reject) => {
@@ -149,13 +186,13 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                                     && sensor.dataSource === DataSourceEnum.MyFood);
                                 if (!sensor) {
                                     // if sensor do not exist, create new entry in database
-                                    promises.push(createNewSensors(sensorsNameCtrl, entry, DataSourceEnum.MyFood, sensorsList))
+                                    promises.push(createNewSensors(sensorsConfigCtrl, entry, DataSourceEnum.MyFood, sensorsList))
                                 } else {
                                     dataToInsert.push({
                                         sensorid: sensor.id, // can be undefined if a sensor is not inserted yet
                                         sensor: entry.sensor, // property used for data reprocessing, will be cleaned
                                         time: entry.time,
-                                        value: entry.value,
+                                        value: Number(entry.value),
                                         active: true
                                     });
                                 }
@@ -170,7 +207,7 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
                                 dataToInsert.push({
                                     sensorid: databaseSensor.id,
                                     time: entry.time,
-                                    value: entry.value,
+                                    value: Number(entry.value),
                                     active: true
                                 });
                                 dataToInsert = dataToInsert.map((sensor) => {
@@ -215,40 +252,102 @@ function myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorsList, timestamp
     });
 }
 
-function updateWebSocket(dataSources, sensorsList) {
-    logger.info(`Starting to update webSockets`);
+function updateWebSocket(data, sensorsList) {
     if (messaging.connections.length > 0) {
+        logger.info(`Starting to update webSockets`);
         logger.info('Number of connections', messaging.connections.length);
 
-        const data = dataSources.reduce((acc,next) => acc.concat(next));
         const dataToSend = sensorsList.map((sensor) => {
             const result = {};
             const id = sensor.id;
-            result[id] = data.filter((data) => data.sensorid === id).map((data) => { return {time : data.time, value : data.value}  });
+            result[id] = data.filter((data) => data.sensorid === id).map((data) => {
+                return {time: data.time, value: data.value}
+            });
             return result;
         }).filter((data) => data[Object.keys(data)[0]].length);
-        messaging.broadcast('message', {type :MessageTypeEnum.DATA, data: dataToSend});
+        messaging.broadcast('message', {type: MessageTypeEnum.DATA, data: dataToSend});
+        logger.info(`Success update of webSockets`);
     }
 }
 
-function startTask(mongoDb) {
-    const sensorsDataCtrl = new SensorsDataController(mongoDb);
-    const sensorsNameCtrl = new SensorsConfigController(mongoDb);
-    let promises = [];
-    promises.push(sensorsNameCtrl.allPromise());
-    promises.push(sensorsDataCtrl.getLastTimeStamp());
-    Promise.all(promises).then((result) => {
-        const sensorList = result[0];
-        const timestamps = Number(result[1]);
-        promises = [];
-        promises.push(influxTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorList, timestamps));
-        promises.push(myFoodTaskCron(sensorsNameCtrl, sensorsDataCtrl, sensorList, timestamps));
-        Promise.all(promises).then((dataSources) => {
-            const total = dataSources.map((dataSource) => dataSource.length).reduce((a, b) => a + b, 0);
-            if (total) {
-                logger.info(`Success Cron Task : Total of ${total} new data since ${moment(timestamps).format()}`);
-                updateWebSocket(dataSources,sensorList)
-            }
-        }).catch((err) => logger.error('Error Task Cron', err));
+
+function updateAlert(data, sensorsConfigList, mongoDb) {
+    const sensorsAlertCtrl = new SensorsAlertController(mongoDb);
+    const adminMailCtrl = new AdminMailController(mongoDb);
+    const valuesToCheck = [];
+    sensorsConfigList.forEach(sensor => {
+        valuesToCheck.push(data.filter(doc => {
+            if(doc.sensorid !== sensor.id) return false;
+            return !!((sensor.minThresholdValue && doc.value <= sensor.minThresholdValue) ||
+                (sensor.maxThresholdValue && doc.value > sensor.maxThresholdValue));
+        }));
     });
+
+    adminMailCtrl.findPromise().then(mails => {
+        valuesToCheck.forEach((values) => {
+            const waitingInsertionAlert = [];
+            values.forEach((value) => {
+                if (waitingInsertionAlert.filter(sensorid => sensorid === value.sensorid).length === 0) {
+                    const sensor = sensorsConfigList.find((sensor) => sensor.id === value.sensorid);
+                    waitingInsertionAlert.push(sensor.id);
+                    sensorsAlertCtrl.findOnePromise({sensorid: sensor.id, token: null}).then(alert => {
+                        if (!alert) {
+                            const tokens = mails.map((mail) => {
+                                return {
+                                    token: crypto.createHash('sha256').update(value.time + mail).digest('base64'),
+                                    userId: mail.id
+                                };
+                            });
+                            sensorsAlertCtrl.insertPromise({
+                                sensorid: sensor.id,
+                                time: value.time,
+                                value: value.value,
+                                tokens: tokens,
+                                token: null
+                            }).then(_ => {
+                                sendAlertMail(sensor, value, mails);
+                                sendAlertWebsocket(sensor, value);
+                            })
+                                .catch(err => logger.error('Error while inserting alert', err));
+                        }
+                    }).catch(err => logger.error('Error while inserting alert', err));
+                }
+            })
+        });
+    });
+
+}
+
+function sendAlertMail(sensor, value, emails) {
+    const sendgrid = new SendGrid({apiKey: config.sendgrid.apiKey});
+    const date = moment(value.time).format('');
+    const message = (sensor.maxThresholdValue && value.value > sensor.maxThresholdValue) ||
+                    !(sensor.minThresholdValue && value.value < sensor.minThresholdValue)
+                    ? sensor.maxThresholdAlertMessage : sensor.minThresholdAlertMessage;
+    const promises = [];
+    emails.forEach(email => {
+        const sensorValue = sensor.unit?`${value.value} ${sensor.unit}`:`${value.value}`;
+        const msg = {
+            to: email,
+            from: config.sendgrid.from,
+            subject: `[ALERT] ${sensor.sensorName}`,
+            text: `Date de l'alerte : ${date}\nValeur du capteur : ${sensorValue}\nMessage : ${message}`,
+            html: `Date de l'alerte : ${date}<br/>Valeur du capteur : ${sensorValue}<br/>Message : ${message}`,
+        };
+        promises.push(sendgrid.sendEmailPromise(msg));
+    });
+    Promise.all(promises).then(_ => logger.info(`Alert Notification : ${promises.length} mails sent`))
+        .catch(err => logger.error(err));
+}
+
+function sendAlertWebsocket(sensor, value) {
+    if (messaging.connections.length > 0) {
+        logger.info(`Sending alert to webSockets`);
+        logger.info('Number of connections', messaging.connections.length);
+        messaging.broadcast('message', {
+            type: MessageTypeEnum.ALERT,
+            data: {sensorid: sensor.id, time: value.time, value: value.value}
+        });
+    }
+
 }
