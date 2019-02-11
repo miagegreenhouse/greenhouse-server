@@ -26,9 +26,6 @@ const MessageTypeEnum = Object.freeze({DATA: 'data', ALERT: 'alert'});
 
 function startTask(mongoDb) {
     const sensorsDataCtrl = new SensorsDataController(mongoDb);
-    // todo remove
-    sensorsDataCtrl.remove({}, () => {
-    });
     const sensorsConfigCtrl = new SensorsConfigController(mongoDb);
     let promises = [];
     promises.push(sensorsConfigCtrl.allPromise());
@@ -256,15 +253,16 @@ function updateWebSocket(data, sensorsList) {
     if (messaging.connections.length > 0) {
         logger.info(`Starting to update webSockets`);
         logger.info('Number of connections', messaging.connections.length);
-
-        const dataToSend = sensorsList.map((sensor) => {
-            const result = {};
-            const id = sensor.id;
-            result[id] = data.filter((data) => data.sensorid === id).map((data) => {
+        const dataToSend = {};
+        sensorsList.forEach((sensor) => {
+            dataToSend[sensor.id] = data.filter((data) => data.sensorid === sensor.id).map((data) => {
                 return {time: data.time, value: data.value}
             });
-            return result;
-        }).filter((data) => data[Object.keys(data)[0]].length);
+            return dataToSend;
+        });
+        Object.keys(dataToSend).forEach(key => {
+            if(!dataToSend[key].length) delete dataToSend[key]
+        });
         messaging.broadcast('message', {type: MessageTypeEnum.DATA, data: dataToSend});
         logger.info(`Success update of webSockets`);
     }
@@ -304,8 +302,8 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
                                 value: value.value,
                                 tokens: tokens,
                                 token: null
-                            }).then(_ => {
-                                sendAlertMail(sensor, value, mails);
+                            }).then(alert => {
+                                sendAlertMail(sensor, value, mails, alert);
                                 sendAlertWebsocket(sensor, value);
                             })
                                 .catch(err => logger.error('Error while inserting alert', err));
@@ -318,7 +316,8 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
 
 }
 
-function sendAlertMail(sensor, value, emails) {
+function sendAlertMail(sensor, value, emails, alert) {
+    console.log(alert);
     const sendgrid = new SendGrid({apiKey: config.sendgrid.apiKey});
     const date = moment(value.time).format('');
     const message = (sensor.maxThresholdValue && value.value > sensor.maxThresholdValue) ||
@@ -327,12 +326,14 @@ function sendAlertMail(sensor, value, emails) {
     const promises = [];
     emails.forEach(email => {
         const sensorValue = sensor.unit?`${value.value} ${sensor.unit}`:`${value.value}`;
+        const currentToken = alert.tokens.find(token => token.userId === email.id).token;
+        const link = `${config.alerts.webAppBaseURI}/alert/${alert.id}/${currentToken}`;
         const msg = {
             to: email,
-            from: config.sendgrid.from,
+            from: config.alerts.from,
             subject: `[ALERT] ${sensor.sensorName}`,
-            text: `Date de l'alerte : ${date}\nValeur du capteur : ${sensorValue}\nMessage : ${message}`,
-            html: `Date de l'alerte : ${date}<br/>Valeur du capteur : ${sensorValue}<br/>Message : ${message}`,
+            text: `Date de l'alerte : ${date}\nValeur du capteur : ${sensorValue}\nMessage : ${message}\n${link}`,
+            html: `Date de l'alerte : ${date}<br/>Valeur du capteur : ${sensorValue}<br/>Message : ${message}<br/>${link}`,
         };
         promises.push(sendgrid.sendEmailPromise(msg));
     });
