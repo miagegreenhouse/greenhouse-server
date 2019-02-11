@@ -257,13 +257,21 @@ function updateWebSocket(data, sensorsList) {
         sensorsList.forEach((sensor) => {
             dataToSend[sensor.id] = data.filter((data) => data.sensorid === sensor.id).map((data) => {
                 return {time: data.time, value: data.value}
+            }).sort((a,b) => {
+                if(a.time > b.time) return 1;
+                if(a.time < b.time) return -1;
+                return 0;
             });
             return dataToSend;
         });
         Object.keys(dataToSend).forEach(key => {
             if(!dataToSend[key].length) delete dataToSend[key]
         });
-        messaging.broadcast('message', {type: MessageTypeEnum.DATA, data: dataToSend});
+        messaging.broadcast('message', {type: MessageTypeEnum.DATA, data: dataToSend.sort((a,b) => {
+                if(a.time > b.time) return 1;
+                if(a.time < b.time) return -1;
+                return 0;
+            })});
         logger.info(`Success update of webSockets`);
     }
 }
