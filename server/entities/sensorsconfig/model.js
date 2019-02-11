@@ -18,6 +18,14 @@ const fields = _.extend(_.clone(BaseFields), {
 
 const schema = new mongoose.Schema(fields);
 
+schema.pre('save', function(next) {
+    if (this.minThresholdValue > this.maxThresholdValue) {
+        next(new Error("Minimum can't be greater than maximum"));
+    } else {
+        next();
+    }
+});  
+
 module.exports = function (mongoose) {
     return mongoose.model('sensorsconfig', schema);
 };
