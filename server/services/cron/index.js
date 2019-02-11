@@ -326,7 +326,6 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
 }
 
 function sendAlertMail(sensor, value, emails, alert) {
-    console.log(alert);
     const sendgrid = new SendGrid({apiKey: config.sendgrid.apiKey});
     const date = moment(value.time).format('');
     const message = (sensor.maxThresholdValue && value.value > sensor.maxThresholdValue) ||
@@ -336,7 +335,7 @@ function sendAlertMail(sensor, value, emails, alert) {
     emails.forEach(email => {
         const sensorValue = sensor.unit?`${value.value} ${sensor.unit}`:`${value.value}`;
         const currentToken = alert.tokens.find(token => token.userId === email.id).token;
-        const link = `${config.alerts.webAppBaseURI}/alert/${alert.id}/${currentToken}`;
+        const link = `${config.alerts.webAppBaseURI}/alert;alertId=${alert.id};token=${currentToken}`;
         const msg = {
             to: email,
             from: config.alerts.from,

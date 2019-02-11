@@ -26,7 +26,7 @@ module.exports = {
   alerts : {
     webAppBaseURI : process.env.ALERT_WEBAPPBASE_URI || 'http://localhost',
     from : process.env.ALERT_FROM ||'ne-pas-repondre@greenhouse.fr',
-    maxHistory : process.env.ALER_MAX_HISTORY || 100
+    maxHistory : process.env.ALERT_MAX_HISTORY || 100
   },
   sendgrid: {
     apiKey: process.env.SENDGRID_APIKEY || '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'

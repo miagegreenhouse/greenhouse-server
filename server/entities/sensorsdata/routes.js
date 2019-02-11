@@ -84,7 +84,10 @@ class SensorData extends RouteBase {
                             return dataToSend;
                         });
                         return response.status(200).send(dataToSend);
-                    }).catch(err => logger.error(err));
+                    }).catch(err => {
+                        logger.error(err);
+                        return response.status(500).send("Internal error, impossible to return sensor data");
+                    });
 
                 }
             });
