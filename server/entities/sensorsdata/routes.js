@@ -29,7 +29,6 @@ class SensorData extends RouteBase {
 
     getHandle(req, response) {
         logger.info("GET " + req.originalUrl);
-
         let params = null;
         const MaxTimeIntervalRequest = config.mongodb.MaxTimeIntervalRequest * 24 * 60 * 60 * 1000;
         // Params definition
@@ -38,7 +37,7 @@ class SensorData extends RouteBase {
         if (req.query != null && req.query.start != null && req.query.end != null) {
             if (req.query.start > req.query.end) {
                 logger.error({"Error": "Start date couldn't be before end date", "Code": 413});
-                return response.status(413).send("Start date couldn't be before end date");
+                return response.status(412).send("Start date couldn't be before end date");
             } else if (req.query.end - req.query.start > MaxTimeIntervalRequest) {
                 logger.error({
                     "Error": "[start date - end date] interval could not exceed " + config.mongodb.MaxTimeIntervalRequest + " months.",
@@ -88,7 +87,6 @@ class SensorData extends RouteBase {
                         logger.error(err);
                         return response.status(500).send("Internal error, impossible to return sensor data");
                     });
-
                 }
             });
         } else {
