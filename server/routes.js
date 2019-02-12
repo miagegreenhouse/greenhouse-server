@@ -258,7 +258,7 @@ module.exports = function (app, mongodb) {
                 return {sensor : sensor.sensor, time:moment(doc.time).format(), value:doc.value, source : sensor.dataSource};
             });
             const fields = ['sensor', 'time', 'value', 'source'];
-            const json2csvParser = new json2csv({ fields, quote: "", delimiter: config.export.delimiter });
+            const json2csvParser = new json2csv({ fields, quote: config.export.quote, delimiter: config.export.delimiter });
             const csv = json2csvParser.parse(dataToSend);
             res.status(200).send(csv)
         }).catch(err => {

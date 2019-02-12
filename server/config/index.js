@@ -5,7 +5,8 @@ module.exports = {
     timer : process.env.CRON_TIMER || 1 // Time in minutes
   },
   export : {
-    delimiter:  process.env.EXPORT_DELIMITER || ';'
+    delimiter:  process.env.EXPORT_DELIMITER || ';',
+    quote:  process.env.EXPORT_QUOTE || '"'
   },
   MyFood : {
     id : process.env.MYFOOD_ID || 109
