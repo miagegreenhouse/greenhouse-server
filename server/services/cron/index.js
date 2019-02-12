@@ -190,7 +190,7 @@ function myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorsList, timesta
                                     dataToInsert.push({
                                         sensorid: sensor.id, // can be undefined if a sensor is not inserted yet
                                         sensor: entry.sensor, // property used for data reprocessing, will be cleaned
-                                        time: entry.time,
+                                        time: Number(entry.time),
                                         value: Number(entry.value),
                                         active: true
                                     });
@@ -205,7 +205,7 @@ function myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorsList, timesta
                                 const entry = item.entry;
                                 dataToInsert.push({
                                     sensorid: databaseSensor.id,
-                                    time: entry.time,
+                                    time: Number(entry.time),
                                     value: Number(entry.value),
                                     active: true
                                 });
@@ -302,7 +302,6 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
                                     userId: mail.id
                                 };
                             });
-                            // todo set message alert
                             let message;
                             if (sensor.minThresholdValue && value.value <= sensor.minThresholdValue) {
                                 message = sensor.minThresholdAlertMessage;
