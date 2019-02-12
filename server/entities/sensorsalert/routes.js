@@ -15,6 +15,7 @@ class SensorsAlert extends RouteBase {
 
     put() {
         this.publicRouter.put('/', (req, res, next) => this.putHandler(req, res, next));
+        this.router.put('/:id', (req, response, next) => { super.putHandler(req, response, next); });
     }
 
     getOne() {

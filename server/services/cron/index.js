@@ -14,7 +14,9 @@ const SendGrid = require('../sendgrid/index');
 
 module.exports = function (mongoDb) {
     logger.info("Running Cron Task");
-    startTask(mongoDb);
+    setTimeout(() => {
+        startTask(mongoDb);
+    }, 5000);
     setInterval(() => {
         logger.info("Running Cron Task");
         startTask(mongoDb)
@@ -267,13 +269,7 @@ function updateWebSocket(data, sensorsList) {
         Object.keys(dataToSend).forEach(key => {
             if (!dataToSend[key].length) delete dataToSend[key]
         });
-        messaging.broadcast('message', {
-            type: MessageTypeEnum.DATA, data: dataToSend.sort((a, b) => {
-                if (a.time > b.time) return 1;
-                if (a.time < b.time) return -1;
-                return 0;
-            })
-        });
+        messaging.broadcast('message', {type: MessageTypeEnum.DATA, data: dataToSend});
         logger.info(`Success update of webSockets`);
     }
 }
@@ -321,8 +317,9 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
                                 message : message
                             }).then(alert => {
                                 sendAlertMail(sensor, value, mails, alert);
-                                sendAlertWebsocket(sensor, value, message);
-                            }).catch(err => logger.error('Error while inserting alert', err));
+                                sendAlertWebsocket(sensor, value, alert);
+                            })
+                                .catch(err => logger.error('Error while inserting alert', err));
                         }
                     }).catch(err => logger.error('Error while inserting alert', err));
                 }
@@ -356,13 +353,22 @@ function sendAlertMail(sensor, value, emails, alert) {
         .catch(err => logger.error(err));
 }
 
-function sendAlertWebsocket(sensor, value, message) {
+
+function sendAlertWebsocket(sensor, value, alert) {
     if (messaging.connections.length > 0) {
         logger.info(`Sending alert to webSockets`);
         logger.info('Number of connections', messaging.connections.length);
         messaging.broadcast('message', {
             type: MessageTypeEnum.ALERT,
-            data: {sensorid: sensor.id, time: value.time, value: value.value, message : message }
+            data: {
+                id: alert._id, 
+                sensorid: sensor.id, 
+                time: value.time, 
+                value: value.value, 
+                sensorName: sensor.sensorName,
+                dataId: sensor.sensorGroupId,
+                message : alert.message 
+            }
         });
     }
 

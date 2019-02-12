@@ -2,7 +2,7 @@ module.exports = {
   port : process.env.PORT || 3000,
   host : process.env.HOST || 'localhost',
   cron : {
-    timer : process.env.CRON_TIMER || 15 // Time in minutes
+    timer : process.env.CRON_TIMER || 1 // Time in minutes
   },
   export : {
     delimiter:  process.env.EXPORT_DELIMITER || ';'
