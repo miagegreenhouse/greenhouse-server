@@ -257,21 +257,23 @@ function updateWebSocket(data, sensorsList) {
         sensorsList.forEach((sensor) => {
             dataToSend[sensor.id] = data.filter((data) => data.sensorid === sensor.id).map((data) => {
                 return {time: data.time, value: data.value}
-            }).sort((a,b) => {
-                if(a.time > b.time) return 1;
-                if(a.time < b.time) return -1;
+            }).sort((a, b) => {
+                if (a.time > b.time) return 1;
+                if (a.time < b.time) return -1;
                 return 0;
             });
             return dataToSend;
         });
         Object.keys(dataToSend).forEach(key => {
-            if(!dataToSend[key].length) delete dataToSend[key]
+            if (!dataToSend[key].length) delete dataToSend[key]
         });
-        messaging.broadcast('message', {type: MessageTypeEnum.DATA, data: dataToSend.sort((a,b) => {
-                if(a.time > b.time) return 1;
-                if(a.time < b.time) return -1;
+        messaging.broadcast('message', {
+            type: MessageTypeEnum.DATA, data: dataToSend.sort((a, b) => {
+                if (a.time > b.time) return 1;
+                if (a.time < b.time) return -1;
                 return 0;
-            })});
+            })
+        });
         logger.info(`Success update of webSockets`);
     }
 }
@@ -283,7 +285,7 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
     const valuesToCheck = [];
     sensorsConfigList.forEach(sensor => {
         valuesToCheck.push(data.filter(doc => {
-            if(doc.sensorid !== sensor.id) return false;
+            if (doc.sensorid !== sensor.id) return false;
             return !!((sensor.minThresholdValue && doc.value <= sensor.minThresholdValue) ||
                 (sensor.maxThresholdValue && doc.value > sensor.maxThresholdValue));
         }));
@@ -304,18 +306,23 @@ function updateAlert(data, sensorsConfigList, mongoDb) {
                                     userId: mail.id
                                 };
                             });
+                            // todo set message alert
+                            let message;
+                            if (sensor.minThresholdValue && value.value <= sensor.minThresholdValue) {
+                                message = sensor.minThresholdAlertMessage;
+                            } else message = sensor.maxThresholdAlertMessage;
                             sensorsAlertCtrl.insertPromise({
                                 sensorid: sensor.id,
                                 time: value.time,
                                 value: value.value,
                                 tokens: tokens,
                                 token: null,
-                                timestampAcknowledgment : null,
+                                timestampAcknowledgment: null,
+                                message : message
                             }).then(alert => {
                                 sendAlertMail(sensor, value, mails, alert);
-                                sendAlertWebsocket(sensor, value);
-                            })
-                                .catch(err => logger.error('Error while inserting alert', err));
+                                sendAlertWebsocket(sensor, value, message);
+                            }).catch(err => logger.error('Error while inserting alert', err));
                         }
                     }).catch(err => logger.error('Error while inserting alert', err));
                 }
@@ -329,13 +336,13 @@ function sendAlertMail(sensor, value, emails, alert) {
     const sendgrid = new SendGrid({apiKey: config.sendgrid.apiKey});
     const date = moment(value.time).format('');
     const message = (sensor.maxThresholdValue && value.value > sensor.maxThresholdValue) ||
-                    !(sensor.minThresholdValue && value.value < sensor.minThresholdValue)
-                    ? sensor.maxThresholdAlertMessage : sensor.minThresholdAlertMessage;
+    !(sensor.minThresholdValue && value.value < sensor.minThresholdValue)
+        ? sensor.maxThresholdAlertMessage : sensor.minThresholdAlertMessage;
     const promises = [];
     emails.forEach(email => {
-        const sensorValue = sensor.unit?`${value.value} ${sensor.unit}`:`${value.value}`;
+        const sensorValue = sensor.unit ? `${value.value} ${sensor.unit}` : `${value.value}`;
         const currentToken = alert.tokens.find(token => token.userId === email.id).token;
-        const link = `${config.alerts.webAppBaseURI}/alert;alertId=${alert.id};token=${currentToken}`;
+        const link = `${config.alerts.webAppBaseURI}/alert;alertId=${encodeURIComponent(alert.id)};token=${encodeURIComponent(currentToken)}`;
         const msg = {
             to: email,
             from: config.alerts.from,
@@ -349,13 +356,13 @@ function sendAlertMail(sensor, value, emails, alert) {
         .catch(err => logger.error(err));
 }
 
-function sendAlertWebsocket(sensor, value) {
+function sendAlertWebsocket(sensor, value, message) {
     if (messaging.connections.length > 0) {
         logger.info(`Sending alert to webSockets`);
         logger.info('Number of connections', messaging.connections.length);
         messaging.broadcast('message', {
             type: MessageTypeEnum.ALERT,
-            data: {sensorid: sensor.id, time: value.time, value: value.value}
+            data: {sensorid: sensor.id, time: value.time, value: value.value, message : message }
         });
     }
 

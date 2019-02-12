@@ -9,7 +9,8 @@ const fields = _.extend(_.clone(BaseFields), {
     value: {type: Number, required: true, default : null},
     tokens: {type: Object, required: true, default : null},
     token: {type: String, required: false, default : null},
-    timestampAcknowledgment: {type: String, required: false, default : null}
+    timestampAcknowledgment: {type: String, required: false, default : null},
+    message : {type: String, required: true, default : null},
 });
 
 const schema = new mongoose.Schema(fields);

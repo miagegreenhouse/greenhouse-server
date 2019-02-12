@@ -33,7 +33,8 @@ class SensorsAlert extends RouteBase {
                     time: doc.time,
                     value: doc.value,
                     sensorid: doc.sensorid,
-                    timestampAcknowledgment: doc.timestampAcknowledgment
+                    timestampAcknowledgment: doc.timestampAcknowledgment,
+                    message: doc.message
                 });
             }
         });
@@ -52,7 +53,8 @@ class SensorsAlert extends RouteBase {
                     sensorid: doc.sensorid,
                     value: doc.value,
                     time: doc.time,
-                    timestampAcknowledgment : doc.timestampAcknowledgment
+                    timestampAcknowledgment : doc.timestampAcknowledgment,
+                    message: doc.message
                 }
             }));
         }).limit(config.alerts.maxHistory);
