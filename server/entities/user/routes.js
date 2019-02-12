@@ -75,6 +75,7 @@ class User extends RouteBase {
     this.router.get('/me', (req, response, next)           => { this.getMe(req, response, next); });
     this.router.get('/:id', (req, response, next)          => { this.getOneHandler(req, response, next); });
     this.publicRouter.get('/exist/', (req, response, next) => { this.existEmail(req, response, next); });
+    this.publicRouter.get('/count', (req, response, next)  => { this.countUsers(req, response, next); });
   }
 
   getMe(req, response, next) {
@@ -85,6 +86,20 @@ class User extends RouteBase {
       if (!res) return response.status(404).send({code: 404, message: "User not found"});
       else return response.status(200).send(res);
     });
+  }
+
+  countUsers(req, response, next) {
+    logger.info("GET " + req.originalUrl);
+    const count = {count: -1};
+    this.ctrl.all((err, res) => {
+      if (err) {
+        logger.error(err);
+        return response.status(err.code || 500).send(err);
+      } else {
+        count.count = res.length;
+        return response.status(200).send(count);
+      }
+    })
   }
 
   getOneHandler(req, response) {
