@@ -36,7 +36,7 @@ class SensorData extends RouteBase {
         let end;
         if (req.query != null && req.query.start != null && req.query.end != null) {
             if (req.query.start > req.query.end) {
-                logger.error({"Error": "Start date couldn't be before end date", "Code": 413});
+                logger.error({"Error": "Start date couldn't be before end date", "Code": 412});
                 return response.status(412).send("Start date couldn't be before end date");
             } else if (req.query.end - req.query.start > MaxTimeIntervalRequest) {
                 logger.error({

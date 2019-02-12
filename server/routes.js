@@ -223,7 +223,28 @@ module.exports = function (app, mongodb) {
         res.setHeader('Content-disposition', `attachment; filename=${moment().format('YYYY-MM-DD HH:mm')}-export.csv`);
         res.set('Content-Type', 'text/csv');
         const promises = [];
-        promises.push(dataCtrl.allPromise());
+        const start = Number(req.param('start'));
+        const end = Number(req.param('end'));
+        if(start && end && start > end) {
+            logger.error({"Error": "Start date couldn't be before end date", "Code": 412});
+            return res.status(412).send("Start date couldn't be before end date");
+        }
+        let params;
+        switch (true) {
+            case start && !end :
+                params = {time: {$gte: start}};
+                break;
+            case !start && end:
+                params = {time: {$lte: end}};
+                break;
+            case !start && !end:
+                params = {};
+                break;
+            default:
+                params = {time: {$gte: start, $lte: end}};
+                break;
+        }
+        promises.push(dataCtrl.findPromise(params));
         promises.push(configCtrl.allPromise());
         Promise.all(promises).then((results) => {
             const docs = results[0];
@@ -233,9 +254,8 @@ module.exports = function (app, mongodb) {
                 if(a.time < b.time) return -1;
                 return 0;
             }).map((doc) => {
-                doc.time = moment(Number(doc.time)).format();
                 const sensor = sensors.find(sensor => sensor.id === doc.sensorid);
-                return {sensor : sensor.sensor, time:doc.time, value:doc.value, source : sensor.dataSource};
+                return {sensor : sensor.sensor, time:moment(doc.time).format(), value:doc.value, source : sensor.dataSource};
             });
             const fields = ['sensor', 'time', 'value', 'source'];
             const json2csvParser = new json2csv({ fields, quote: "", delimiter: config.export.delimiter });
