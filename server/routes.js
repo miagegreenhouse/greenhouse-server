@@ -231,16 +231,16 @@ module.exports = function (app, mongodb) {
         }
         let params;
         switch (true) {
-            case start && !end :
+            case !isNaN(start) && isNaN(end) :
                 params = {time: {$gte: start}};
                 break;
-            case !start && end:
+            case isNaN(start) && !isNaN(end):
                 params = {time: {$lte: end}};
                 break;
-            case !start && !end:
+            case isNaN(start) && isNaN(end):
                 params = {};
                 break;
-            default:
+            case !isNaN(start) && !isNaN(end):
                 params = {time: {$gte: start, $lte: end}};
                 break;
         }
