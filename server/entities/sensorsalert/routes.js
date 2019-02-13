@@ -29,6 +29,7 @@ class SensorsAlert extends RouteBase {
                 logger.error(err);
                 return response.status(err.code || 500).send("Error in database");
             } else {
+                if (!doc) return response.status(404).send("Not found");
                 return response.status(200).send({
                     _id: doc.id,
                     time: doc.time,
@@ -48,6 +49,7 @@ class SensorsAlert extends RouteBase {
                 logger.error(err);
                 return res.status(500).send("Error in database");
             }
+            if (!docs) return res.status(404).send("Not found");
             return res.status(200).send(docs.map((doc) => {
                 return {
                     id: doc.id,
