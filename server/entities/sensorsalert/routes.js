@@ -15,7 +15,7 @@ class SensorsAlert extends RouteBase {
 
     put() {
         this.publicRouter.put('/', (req, res, next) => this.putHandler(req, res, next));
-        this.router.put('/:id', (req, response, next) => { super.putHandler(req, response, next); });
+        this.router.put('/:id', (req, response, next) => { this.putOneHandler(req, response, next); });
     }
 
     getOne() {
@@ -71,6 +71,27 @@ class SensorsAlert extends RouteBase {
             if (alert && alert.tokens.find(t => t.token === token)) {
                 alert.timestampAcknowledgment = moment().valueOf();
                 alert.token = token;
+                this.ctrl.updatePromise(alert).then(doc => {
+                    res.status(200).send(doc.ok === 1)
+                }).catch(err => {
+                    logger.error(err);
+                    res.status(500).send("Error in database");
+                });
+            } else if (!alert) res.status(404).send("Not found");
+            else res.status(401).send("Not authorized");
+        }).catch(err => {
+            logger.error(err);
+            res.status(500).send("Error in database");
+        });
+    }
+
+    putOneHandler(req, res) {
+        logger.info("PUT " + req.originalUrl);
+        const alertId = req.params.id;
+        this.ctrl.findOnePromise({_id: alertId, token: null}).then(alert => {
+            if (alert) {
+                alert.timestampAcknowledgment = moment().valueOf();
+                alert.token = "admin";
                 this.ctrl.updatePromise(alert).then(doc => {
                     res.status(200).send(doc.ok === 1)
                 }).catch(err => {
