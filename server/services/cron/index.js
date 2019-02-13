@@ -13,8 +13,8 @@ const SendGrid = require('../sendgrid/index');
 
 
 module.exports = function (mongoDb) {
-    logger.info("Running Cron Task");
     setTimeout(() => {
+        logger.info("Running Cron Task");
         startTask(mongoDb);
     }, 5000);
     setInterval(() => {
