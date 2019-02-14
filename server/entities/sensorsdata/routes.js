@@ -11,6 +11,7 @@ const request = require('request');
 const config = require('../../config');
 const moment = require('moment');
 const SensorsConfigController = require('../../entities/sensorsconfig/controller');
+const SmoothedDataController = require('../../entities/smoothdata/controller');
 
 class SensorData extends RouteBase {
 
@@ -18,6 +19,7 @@ class SensorData extends RouteBase {
         super(db);
         this.ctrl = new Controller(db);
         this.sensorsConfigCtrl = new SensorsConfigController(db);
+        this.smoothDataCtrl = new SmoothedDataController(db);
         this.auth = new Auth(db);
     }
 
@@ -27,9 +29,37 @@ class SensorData extends RouteBase {
         });
     }
 
+    cbFindData(err, docs, response) {
+        if (err) {
+            logger.error(err);
+            return response.status(err.code || 500).send('Internal error');
+        } else {
+            logger.info({"Response": "Ok", "Code": 200});
+            this.sensorsConfigCtrl.allPromise().then(sensorsList => {
+                const dataToSend = {};
+                sensorsList.forEach((sensor) => {
+                    dataToSend[sensor.id] = docs.filter((data) => data.sensorid === sensor.id).map((data) => {
+                        console.log(sensor.id, data.time, data.value)
+                        return {time: data.time, value: data.value}
+                    }).sort((a,b) => {
+                        if(a.time > b.time) return 1;
+                        if(a.time < b.time) return -1;
+                        return 0;
+                    });
+                    return dataToSend;
+                });
+                return response.status(200).send(dataToSend);
+            }).catch(err => {
+                logger.error(err);
+                return response.status(500).send("Internal error, impossible to return smoothed sensors data");
+            });
+        }
+    }
+
     getHandle(req, response) {
         logger.info("GET " + req.originalUrl);
         let params = null;
+        let isSmoothed;
         const MaxTimeIntervalRequest = config.mongodb.MaxTimeIntervalRequest * 24 * 60 * 60 * 1000;
         // Params definition
         let start;
@@ -39,11 +69,8 @@ class SensorData extends RouteBase {
                 logger.error({"Error": "Start date couldn't be before end date", "Code": 413});
                 return response.status(412).send("Start date couldn't be before end date");
             } else if (req.query.end - req.query.start > MaxTimeIntervalRequest) {
-                logger.error({
-                    "Error": "[start date - end date] interval could not exceed " + config.mongodb.MaxTimeIntervalRequest + " months.",
-                    "Code": 413
-                });
-                return response.status(413).send("[start date - end date] interval could not exceed " + config.mongodb.MaxTimeIntervalRequest + " months.");
+                isSmoothed = true;
+                params = {time: {$gte: req.query.start, $lte: req.query.end}};
             } else {
                 start = Number(req.query.start);
                 end = Number(req.query.end);
@@ -64,31 +91,15 @@ class SensorData extends RouteBase {
             params = {time: {$gte: moment().valueOf() - MaxTimeIntervalRequest}};
         }
         if (params) {
-            this.ctrl.find(params, (err, docs) => {
-                if (err) {
-                    logger.error(err);
-                    return response.status(err.code || 500).send('Internal error');
-                } else {
-                    logger.info({"Response": "Ok", "Code": 200});
-                    this.sensorsConfigCtrl.allPromise().then(sensorsList => {
-                        const dataToSend = {};
-                        sensorsList.forEach((sensor) => {
-                            dataToSend[sensor.id] = docs.filter((data) => data.sensorid === sensor.id).map((data) => {
-                                return {time: data.time, value: data.value}
-                            }).sort((a,b) => {
-                                if(a.time > b.time) return 1;
-                                if(a.time < b.time) return -1;
-                                return 0;
-                            });
-                            return dataToSend;
-                        });
-                        return response.status(200).send(dataToSend);
-                    }).catch(err => {
-                        logger.error(err);
-                        return response.status(500).send("Internal error, impossible to return sensor data");
-                    });
-                }
-            });
+            if(isSmoothed){
+                this.smoothDataCtrl.find(params, (err, docs) => {
+                    this.cbFindData(err, docs, response);
+                });
+            } else {
+                this.ctrl.find(params, (err, docs) => {
+                    this.cbFindData(err, docs, response);
+                });
+            }
         } else {
             logger.error({"Error": "Internal error, impossible to return sensor data", "Code": 500});
             return response.status(500).send("Internal error, impossible to return sensor data");

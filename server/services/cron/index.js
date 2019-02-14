@@ -3,6 +3,7 @@ const config = require('../../config/index');
 const request = require('request');
 const moment = require('moment');
 const SensorsDataController = require('../../entities/sensorsdata/controller');
+const SmoothDataController = require('../../entities/smoothdata/controller');
 const SensorsConfigController = require('../../entities/sensorsconfig/controller');
 const SensorsAlertController = require('../../entities/sensorsalert/controller');
 const AdminMailController = require('../../entities/adminmail/controller');
@@ -26,25 +27,37 @@ const MessageTypeEnum = Object.freeze({DATA: 'data', ALERT: 'alert'});
 
 function startTask(mongoDb) {
     const sensorsDataCtrl = new SensorsDataController(mongoDb);
+    const smoothedSensorsDataCtrl = new SmoothDataController(mongoDb);
     const sensorsConfigCtrl = new SensorsConfigController(mongoDb);
     let promises = [];
     promises.push(sensorsConfigCtrl.allPromise());
     promises.push(sensorsDataCtrl.getLastTimeStamp());
+    promises.push(smoothedSensorsDataCtrl.getLastTimeStamp());
     Promise.all(promises).then((result) => {
         const sensorList = result[0];
         const timestamps = Number(result[1]);
-        promises = [];
-        promises.push(g2elabTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorList, timestamps));
-        promises.push(myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorList, timestamps));
-        Promise.all(promises).then((dataSources) => {
-            const total = dataSources.map((dataSource) => dataSource.length).reduce((a, b) => a + b, 0);
-            if (total) {
-                logger.info(`Success Cron Task : Total of ${total} new data since ${moment(timestamps).format()}`);
-                const data = dataSources.reduce((acc, next) => acc.concat(next));
-                updateWebSocket(data, sensorList);
-                updateAlert(data, sensorList, mongoDb);
-            }
-        }).catch((err) => logger.error('Error Task Cron', err));
+        let lastSmoothTimestamp = Number(result[2]);
+        let timestampPromise;
+        if (lastSmoothTimestamp == 0) {
+            timestampPromise = sensorsDataCtrl.getFirstTimeStamp();
+        } else {
+            timestampPromise = new Promise((resolve) => { resolve(lastSmoothTimestamp); });
+        }
+        timestampPromise.then(smoothTimestamp => {
+            promises = [];
+            promises.push(g2elabTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorList, timestamps));
+            promises.push(myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorList, timestamps));
+            promises.push(smoothedDataTaskCron(sensorsConfigCtrl, sensorsDataCtrl, smoothedSensorsDataCtrl, sensorList, smoothTimestamp));
+            Promise.all(promises).then((dataSources) => {
+                const total = dataSources.map((dataSource) => dataSource.length).reduce((a, b) => a + b, 0);
+                if (total) {
+                    logger.info(`Success Cron Task : Total of ${total} new data since ${moment(timestamps).format()}`);
+                    const data = dataSources.reduce((acc, next) => acc.concat(next));
+                    updateWebSocket(data, sensorList);
+                    updateAlert(data, sensorList, mongoDb);
+                }
+            }).catch((err) => logger.error('Error Task Cron', err));
+        });
     });
 }
 
@@ -153,6 +166,39 @@ function g2elabTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorsList, timesta
     });
 }
 
+function getFirstSmoothedTimestamp(lastTimestampRecorded){
+    const newDate = moment.unix(lastTimestampRecorded/1000).format("MM/DD/YYYY");
+    const oneHour = 60 * 60 * 1000;
+    if(lastTimestampRecorded < moment(newDate, 'MM/DD/YYYY').valueOf() + 24 * oneHour) {
+        if(lastTimestampRecorded < moment(newDate, 'MM/DD/YYYY').valueOf() + 18 * oneHour) {
+            if(lastTimestampRecorded < moment(newDate, 'MM/DD/YYYY').valueOf() + 12 * oneHour) {
+                if(lastTimestampRecorded < moment(newDate, 'MM/DD/YYYY').valueOf() + 6 * oneHour) {
+                    if(lastTimestampRecorded < moment(newDate, 'MM/DD/YYYY').valueOf()) {
+                        return moment(newDate, 'MM/DD/YYYY').valueOf();
+                    }
+                    return moment(newDate, 'MM/DD/YYYY').valueOf() + 6 * oneHour;
+                }
+                return moment(newDate, 'MM/DD/YYYY').valueOf() + 12 * oneHour;
+            }
+            return moment(newDate, 'MM/DD/YYYY').valueOf() + 18 * oneHour;
+        }
+        return moment(newDate, 'MM/DD/YYYY').valueOf() + 24 * oneHour;
+    }
+    return null;
+}
+
+function smoothTimeStampSinceLastTimeStamp(lastTimestampRecorded){
+    const timestampActual = Number(moment().valueOf());
+    let ts = getFirstSmoothedTimestamp(Number(lastTimestampRecorded));
+    let timeStampToProvide = [];
+    const timeToNextTimetampToRecord = 6 * 60 * 60 * 1000;
+    while (ts != null && ts < timestampActual) {
+        timeStampToProvide.push(ts);
+        ts += timeToNextTimetampToRecord
+    }
+    return timeStampToProvide;
+}
+
 function myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorsList, timestamp) {
     // Retrieve last value timestamp
     // Request data since last timestamp value
@@ -246,6 +292,53 @@ function myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorsList, timesta
         } catch (err) {
             reject(err)
         }
+    });
+}
+
+function smoothedDataTaskCron(sensorsConfigCtrl, sensorsDataCtrl, smoothedSensorsDataCtrl, sensorsList, timestamp){
+    return new Promise((resolve, reject) => {
+        let dataToInsert = [];
+        let promises = [];
+        let dataToInsertPromises = [];
+
+        // Retrieve all sensors from sensorConfig
+        let sensorsId = [];
+        sensorsConfigCtrl.all((nullValue, sensors) => {
+            sensorsId = sensors.map(sensor => {
+                return sensor._id;
+            });
+
+            // Retrieve all day's quarter timestamp since last timestamp recorded
+            const tabTimestamp = smoothTimeStampSinceLastTimeStamp(timestamp);
+            tabTimestamp.forEach((smoothTimestamp, index) => {
+                const nextTimestamp = tabTimestamp[index+1];
+                // Reach all sensors and create params for query MongoDB
+                sensorsId.forEach(sensorId => {
+                    dataToInsertPromises.push(sensorsDataCtrl.getFirstDataAfterTimestamp(smoothTimestamp, nextTimestamp, sensorId).then(data => {
+                        if(data != null){
+                            dataToInsert.push({
+                                sensorid: data.sensorid,
+                                time: data.time,
+                                value: Number(data.value),
+                                active: true
+                            });
+                        }
+                    }));
+                });
+            });
+            Promise.all(dataToInsertPromises).then(() => {
+                // Data insertion
+                dataToInsert.forEach((row) => {
+                    promises.push(smoothedSensorsDataCtrl.insertPromise(row));
+                });
+            }).catch((err) => reject(err));
+
+            // Success callback
+            Promise.all(promises).then(() => {
+                if (promises.length) logger.info(`New smoothed data inserted into mongodb : ${promises.length} new rows.`);
+                resolve(dataToInsert);
+            }).catch((err) => reject(err));
+        });
     });
 }
 
