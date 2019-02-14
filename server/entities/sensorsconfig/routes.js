@@ -15,7 +15,7 @@ class SensorsConfig extends RouteBase {
   }
 
   put() {
-    this.publicRouter.put('/:id', (req, res, next) => this.putHandler(req, res, next));
+    this.router.put('/:id', (req, res, next) => this.putHandler(req, res, next));
   }
 
 }
