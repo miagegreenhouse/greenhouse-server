@@ -3,6 +3,7 @@
 const Controller          = require('./controller');
 const RouteBase           = require('../base/routes');
 const SensorsConfigCtrl   = require('../sensorsconfig/controller');
+const logger              = require('../../logger');
 
 class SensorsGroup extends RouteBase {
 

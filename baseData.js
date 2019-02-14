@@ -20,7 +20,7 @@ function setup(db) {
         const promises = [];
         docs.forEach((doc) => {
             promises.push(new Promise((resolve, reject) => {
-                sensorsGroupCtrl.insertPromise({name : doc.sensor}).then((group) => {
+                sensorsGroupCtrl.insertPromise({name : doc.sensor.replace(' Sensor', '')}).then((group) => {
                     sensorsConfigCtrl.update({_id: doc._id, sensorGroupId: group._id}, (err, res) => {
                         if (err) reject(err);
                         else resolve(res);

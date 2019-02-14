@@ -39,7 +39,6 @@ class SensorData extends RouteBase {
                 const dataToSend = {};
                 sensorsList.forEach((sensor) => {
                     dataToSend[sensor.id] = docs.filter((data) => data.sensorid === sensor.id).map((data) => {
-                        console.log(sensor.id, data.time, data.value)
                         return {time: data.time, value: data.value}
                     }).sort((a,b) => {
                         if(a.time > b.time) return 1;

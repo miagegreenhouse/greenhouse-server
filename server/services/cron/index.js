@@ -49,7 +49,9 @@ function startTask(mongoDb) {
             promises = [];
             promises.push(g2elabTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorList, timestamps));
             promises.push(myFoodTaskCron(sensorsConfigCtrl, sensorsDataCtrl, sensorList, timestamps));
-            promises.push(smoothedDataTaskCron(sensorsConfigCtrl, sensorsDataCtrl, smoothedSensorsDataCtrl, sensorList, smoothTimestamp));
+            if (smoothTimestamp !== 0) {
+                promises.push(smoothedDataTaskCron(sensorsConfigCtrl, sensorsDataCtrl, smoothedSensorsDataCtrl, sensorList, smoothTimestamp));
+            }
             Promise.all(promises).then((dataSources) => {
                 const total = dataSources.map((dataSource) => dataSource.length).reduce((a, b) => a + b, 0);
                 if (total) {
