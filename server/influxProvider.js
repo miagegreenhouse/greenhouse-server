@@ -19,8 +19,7 @@ module.exports = function(host, port, dbName, user, password) {
   }).then(() => {
     logger.info('InfluxDB successfully connected');
   }).catch(err => {
-    logger.error('InfluxDB error');
-    throw err
+    logger.error('InfluxDB error', err);
   });
   return influx
 };

@@ -15,6 +15,7 @@ class SensorsAlert extends RouteBase {
 
     put() {
         this.publicRouter.put('/', (req, res, next) => this.putHandler(req, res, next));
+        this.router.put('/:id', (req, response, next) => { this.putOneHandler(req, response, next); });
     }
 
     getOne() {
@@ -28,12 +29,14 @@ class SensorsAlert extends RouteBase {
                 logger.error(err);
                 return response.status(err.code || 500).send("Error in database");
             } else {
+                if (!doc) return response.status(404).send("Not found");
                 return response.status(200).send({
                     _id: doc.id,
                     time: doc.time,
                     value: doc.value,
                     sensorid: doc.sensorid,
-                    timestampAcknowledgment: doc.timestampAcknowledgment
+                    timestampAcknowledgment: doc.timestampAcknowledgment,
+                    message: doc.message
                 });
             }
         });
@@ -46,13 +49,15 @@ class SensorsAlert extends RouteBase {
                 logger.error(err);
                 return res.status(500).send("Error in database");
             }
+            if (!docs) return res.status(404).send("Not found");
             return res.status(200).send(docs.map((doc) => {
                 return {
                     id: doc.id,
                     sensorid: doc.sensorid,
                     value: doc.value,
                     time: doc.time,
-                    timestampAcknowledgment : doc.timestampAcknowledgment
+                    timestampAcknowledgment : doc.timestampAcknowledgment,
+                    message: doc.message
                 }
             }));
         }).limit(config.alerts.maxHistory);
@@ -66,6 +71,27 @@ class SensorsAlert extends RouteBase {
             if (alert && alert.tokens.find(t => t.token === token)) {
                 alert.timestampAcknowledgment = moment().valueOf();
                 alert.token = token;
+                this.ctrl.updatePromise(alert).then(doc => {
+                    res.status(200).send(doc.ok === 1)
+                }).catch(err => {
+                    logger.error(err);
+                    res.status(500).send("Error in database");
+                });
+            } else if (!alert) res.status(404).send("Not found");
+            else res.status(401).send("Not authorized");
+        }).catch(err => {
+            logger.error(err);
+            res.status(500).send("Error in database");
+        });
+    }
+
+    putOneHandler(req, res) {
+        logger.info("PUT " + req.originalUrl);
+        const alertId = req.params.id;
+        this.ctrl.findOnePromise({_id: alertId, token: null}).then(alert => {
+            if (alert) {
+                alert.timestampAcknowledgment = moment().valueOf();
+                alert.token = "admin";
                 this.ctrl.updatePromise(alert).then(doc => {
                     res.status(200).send(doc.ok === 1)
                 }).catch(err => {
