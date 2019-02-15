@@ -4,6 +4,12 @@ const config = require('./server/config');
 const SensorsGroupController = require('./server/entities/sensorsgroup/controller');
 const SensorsConfigController = require('./server/entities/sensorsconfig/controller');
 
+const Configs = [
+  {
+    
+  }
+];
+
 mongooseProvider(config.mongodb.host, config.mongodb.port, config.mongodb.dbName, config.mongodb.user, config.mongodb.password, (err, res) => {
     if (err) {
         console.log("Connection to mongo has been broken");

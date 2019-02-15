@@ -23,15 +23,18 @@ class SensorsGroup extends RouteBase {
       logger.info({"code" : 200, "message" : "Document already deleted"});
       return response.status(200).send({"code" : 200, "message" : "Document already deleted"});
     } else {
-      this.sensorsConfigCtrl.find({sensorGroupId: req.params.id}, (err, sensorsConfigs) => {
+      this.sensorsConfigCtrl.find({sensorGroupIds: {$all: [req.params.id]}}, (err, sensorsConfigs) => {
         if (err) {
           logger.error(err);
           return response.status(err.code || 500).send(err);
         }
         let promises = [];
         sensorsConfigs.forEach(sensorConfig => {
-          sensorConfig.sensorGroupId = null;
-          logger.info("Deleting group from sensor config : ", sensorConfig._id);
+          let index = sensorConfig.sensorGroupIds.indexOf(req.params.id);
+          if (index !== -1) {
+            logger.info("Deleting group from sensor config : ", sensorConfig._id);
+            sensorConfig.sensorGroupIds = sensorConfig.sensorGroupIds.slice(index, 1);
+          }
           promises.push(this.sensorsConfigCtrl.updatePromise(sensorConfig));
         });
         Promise.all(promises)
