@@ -13,7 +13,8 @@ const fields = _.extend(_.clone(BaseFields), {
     minThresholdValue: Number,
     minThresholdAlertMessage: String,
     maxThresholdValue: Number,
-    maxThresholdAlertMessage: String
+    maxThresholdAlertMessage: String,
+    color: String
 });
 
 const schema = new mongoose.Schema(fields);

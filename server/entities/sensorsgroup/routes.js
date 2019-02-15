@@ -33,7 +33,7 @@ class SensorsGroup extends RouteBase {
           let index = sensorConfig.sensorGroupIds.indexOf(req.params.id);
           if (index !== -1) {
             logger.info("Deleting group from sensor config : ", sensorConfig._id);
-            sensorConfig.sensorGroupIds = sensorConfig.sensorGroupIds.slice(index, 1);
+            sensorConfig.sensorGroupIds.splice(index, 1);
           }
           promises.push(this.sensorsConfigCtrl.updatePromise(sensorConfig));
         });
