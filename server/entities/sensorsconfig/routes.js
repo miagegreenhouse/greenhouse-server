@@ -13,6 +13,11 @@ class SensorsConfig extends RouteBase {
   get() {
     this.publicRouter.get('/', (req, res, next) => this.getHandle(req, res, next));
   }
+  post() {
+    this.publicRouter.post('/', (req, res, next) => {
+      res.status(401).send('Add a sensors is not allowed');
+    });
+  }
 
   put() {
     this.router.put('/:id', (req, res, next) => this.putHandler(req, res, next));
