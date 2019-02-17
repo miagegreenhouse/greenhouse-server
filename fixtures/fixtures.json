@@ -1,0 +1,6377 @@
+[
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T16:58:00+02:00",
+    "value": "31,088"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:00:00+02:00",
+    "value": "31,312"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:02:00+02:00",
+    "value": "31,537"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:04:00+02:00",
+    "value": "31,761"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:06:00+02:00",
+    "value": "31,985"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:08:00+02:00",
+    "value": "32,21"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:10:00+02:00",
+    "value": "32,434"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:12:00+02:00",
+    "value": "32,659"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:14:00+02:00",
+    "value": "32,883"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:16:00+02:00",
+    "value": "33,107"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:18:00+02:00",
+    "value": "33,332"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:20:00+02:00",
+    "value": "33,556"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:22:00+02:00",
+    "value": "33,78"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:24:00+02:00",
+    "value": "34,005"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:26:00+02:00",
+    "value": "34,229"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:28:00+02:00",
+    "value": "34,454"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:30:00+02:00",
+    "value": "34,678"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:32:00+02:00",
+    "value": "34,902"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:34:00+02:00",
+    "value": "35,127"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:36:00+02:00",
+    "value": "35,351"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:38:00+02:00",
+    "value": "35,576"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:40:00+02:00",
+    "value": "35,8"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:42:00+02:00",
+    "value": "35,753"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:44:00+02:00",
+    "value": "35,706"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:46:00+02:00",
+    "value": "35,659"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:48:00+02:00",
+    "value": "35,612"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:50:00+02:00",
+    "value": "35,566"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:52:00+02:00",
+    "value": "35,519"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:54:00+02:00",
+    "value": "35,472"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:56:00+02:00",
+    "value": "35,425"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T17:58:00+02:00",
+    "value": "35,378"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:00:00+02:00",
+    "value": "35,331"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:02:00+02:00",
+    "value": "35,284"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:04:00+02:00",
+    "value": "35,237"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:06:00+02:00",
+    "value": "35,19"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:08:00+02:00",
+    "value": "35,144"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:10:00+02:00",
+    "value": "35,097"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:12:00+02:00",
+    "value": "35,05"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:14:00+02:00",
+    "value": "35,003"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:16:00+02:00",
+    "value": "34,956"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:18:00+02:00",
+    "value": "34,909"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:20:00+02:00",
+    "value": "34,862"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:22:00+02:00",
+    "value": "34,815"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:24:00+02:00",
+    "value": "34,768"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:26:00+02:00",
+    "value": "34,722"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:28:00+02:00",
+    "value": "34,675"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:30:00+02:00",
+    "value": "34,628"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:32:00+02:00",
+    "value": "34,581"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:34:00+02:00",
+    "value": "34,534"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:36:00+02:00",
+    "value": "34,487"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:38:00+02:00",
+    "value": "34,44"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:40:00+02:00",
+    "value": "34,393"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:42:00+02:00",
+    "value": "34,346"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:44:00+02:00",
+    "value": "34,3"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:46:00+02:00",
+    "value": "34,253"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:48:00+02:00",
+    "value": "34,206"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:50:00+02:00",
+    "value": "34,159"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:52:00+02:00",
+    "value": "34,112"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:54:00+02:00",
+    "value": "34,065"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:56:00+02:00",
+    "value": "34,018"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T18:58:00+02:00",
+    "value": "33,971"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:00:00+02:00",
+    "value": "33,924"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:02:00+02:00",
+    "value": "33,878"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:04:00+02:00",
+    "value": "33,831"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:06:00+02:00",
+    "value": "33,784"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:08:00+02:00",
+    "value": "33,737"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:10:00+02:00",
+    "value": "33,69"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:12:00+02:00",
+    "value": "33,643"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:14:00+02:00",
+    "value": "33,596"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:16:00+02:00",
+    "value": "33,549"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:18:00+02:00",
+    "value": "33,502"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:20:00+02:00",
+    "value": "33,456"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:22:00+02:00",
+    "value": "33,409"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:24:00+02:00",
+    "value": "33,362"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:26:00+02:00",
+    "value": "33,315"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:28:00+02:00",
+    "value": "33,268"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:30:00+02:00",
+    "value": "33,221"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:32:00+02:00",
+    "value": "33,174"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:34:00+02:00",
+    "value": "33,127"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:36:00+02:00",
+    "value": "33,08"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:38:00+02:00",
+    "value": "33,034"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:40:00+02:00",
+    "value": "32,987"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:42:00+02:00",
+    "value": "32,94"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:44:00+02:00",
+    "value": "32,893"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:46:00+02:00",
+    "value": "32,846"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:48:00+02:00",
+    "value": "32,799"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:50:00+02:00",
+    "value": "32,752"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:52:00+02:00",
+    "value": "32,705"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:54:00+02:00",
+    "value": "32,659"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:56:00+02:00",
+    "value": "32,612"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T19:58:00+02:00",
+    "value": "32,565"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:00:00+02:00",
+    "value": "32,518"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:02:00+02:00",
+    "value": "32,471"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:04:00+02:00",
+    "value": "32,424"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:06:00+02:00",
+    "value": "32,377"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:08:00+02:00",
+    "value": "32,33"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:10:00+02:00",
+    "value": "32,283"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:12:00+02:00",
+    "value": "32,237"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:14:00+02:00",
+    "value": "32,19"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:16:00+02:00",
+    "value": "32,143"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:18:00+02:00",
+    "value": "32,096"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:20:00+02:00",
+    "value": "32,049"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:22:00+02:00",
+    "value": "32,002"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:24:00+02:00",
+    "value": "31,955"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:26:00+02:00",
+    "value": "31,908"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:28:00+02:00",
+    "value": "31,861"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:30:00+02:00",
+    "value": "31,815"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:32:00+02:00",
+    "value": "31,768"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:34:00+02:00",
+    "value": "31,721"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:36:00+02:00",
+    "value": "31,674"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:38:00+02:00",
+    "value": "31,627"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:40:00+02:00",
+    "value": "31,58"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:42:00+02:00",
+    "value": "31,533"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:44:00+02:00",
+    "value": "31,486"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:46:00+02:00",
+    "value": "31,439"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:48:00+02:00",
+    "value": "31,393"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:50:00+02:00",
+    "value": "31,346"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:52:00+02:00",
+    "value": "31,299"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:54:00+02:00",
+    "value": "31,252"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:56:00+02:00",
+    "value": "31,205"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T20:58:00+02:00",
+    "value": "31,158"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:00:00+02:00",
+    "value": "31,111"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:02:00+02:00",
+    "value": "31,064"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:04:00+02:00",
+    "value": "31,017"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:06:00+02:00",
+    "value": "30,971"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:08:00+02:00",
+    "value": "30,924"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:10:00+02:00",
+    "value": "30,877"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:12:00+02:00",
+    "value": "30,83"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:14:00+02:00",
+    "value": "30,783"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:16:00+02:00",
+    "value": "30,736"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:18:00+02:00",
+    "value": "30,689"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:20:00+02:00",
+    "value": "30,642"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:22:00+02:00",
+    "value": "30,595"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:24:00+02:00",
+    "value": "30,549"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:26:00+02:00",
+    "value": "30,502"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:28:00+02:00",
+    "value": "30,455"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:30:00+02:00",
+    "value": "30,408"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:32:00+02:00",
+    "value": "30,361"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:34:00+02:00",
+    "value": "30,314"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:36:00+02:00",
+    "value": "30,267"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:38:00+02:00",
+    "value": "30,22"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:40:00+02:00",
+    "value": "30,173"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:42:00+02:00",
+    "value": "30,127"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:44:00+02:00",
+    "value": "30,08"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:46:00+02:00",
+    "value": "30,033"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:48:00+02:00",
+    "value": "29,986"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:50:00+02:00",
+    "value": "29,939"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:52:00+02:00",
+    "value": "29,892"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:54:00+02:00",
+    "value": "29,845"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:56:00+02:00",
+    "value": "29,798"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T21:58:00+02:00",
+    "value": "29,751"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:00:00+02:00",
+    "value": "29,705"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:02:00+02:00",
+    "value": "29,658"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:04:00+02:00",
+    "value": "29,611"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:06:00+02:00",
+    "value": "29,564"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:08:00+02:00",
+    "value": "29,517"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:10:00+02:00",
+    "value": "29,47"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:12:00+02:00",
+    "value": "29,423"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:14:00+02:00",
+    "value": "29,376"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:16:00+02:00",
+    "value": "29,329"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:18:00+02:00",
+    "value": "29,283"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:20:00+02:00",
+    "value": "29,236"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:22:00+02:00",
+    "value": "29,189"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:24:00+02:00",
+    "value": "29,142"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:26:00+02:00",
+    "value": "29,095"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:28:00+02:00",
+    "value": "29,048"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:30:00+02:00",
+    "value": "29,001"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:32:00+02:00",
+    "value": "28,954"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:34:00+02:00",
+    "value": "28,907"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:36:00+02:00",
+    "value": "28,861"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:38:00+02:00",
+    "value": "28,814"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:40:00+02:00",
+    "value": "28,767"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:42:00+02:00",
+    "value": "28,72"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:44:00+02:00",
+    "value": "28,673"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:46:00+02:00",
+    "value": "28,626"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:48:00+02:00",
+    "value": "28,579"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:50:00+02:00",
+    "value": "28,532"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:52:00+02:00",
+    "value": "28,485"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:54:00+02:00",
+    "value": "28,439"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:56:00+02:00",
+    "value": "28,392"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T22:58:00+02:00",
+    "value": "28,345"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:00:00+02:00",
+    "value": "28,298"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:02:00+02:00",
+    "value": "28,251"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:04:00+02:00",
+    "value": "28,204"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:06:00+02:00",
+    "value": "28,157"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:08:00+02:00",
+    "value": "28,11"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:10:00+02:00",
+    "value": "28,063"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:12:00+02:00",
+    "value": "28,017"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:14:00+02:00",
+    "value": "27,97"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:16:00+02:00",
+    "value": "27,923"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:18:00+02:00",
+    "value": "27,876"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:20:00+02:00",
+    "value": "27,829"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:22:00+02:00",
+    "value": "27,782"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:24:00+02:00",
+    "value": "27,735"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:26:00+02:00",
+    "value": "27,688"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:28:00+02:00",
+    "value": "27,641"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:30:00+02:00",
+    "value": "27,595"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:32:00+02:00",
+    "value": "27,548"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:34:00+02:00",
+    "value": "27,501"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:36:00+02:00",
+    "value": "27,454"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:38:00+02:00",
+    "value": "27,407"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:40:00+02:00",
+    "value": "27,36"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:42:00+02:00",
+    "value": "27,313"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:44:00+02:00",
+    "value": "27,266"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:46:00+02:00",
+    "value": "27,22"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:48:00+02:00",
+    "value": "27,173"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:50:00+02:00",
+    "value": "27,126"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:52:00+02:00",
+    "value": "27,079"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:54:00+02:00",
+    "value": "27,032"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:56:00+02:00",
+    "value": "26,985"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-16T23:58:00+02:00",
+    "value": "26,938"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:00:00+02:00",
+    "value": "26,891"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:02:00+02:00",
+    "value": "26,844"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:04:00+02:00",
+    "value": "26,798"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:06:00+02:00",
+    "value": "26,751"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:08:00+02:00",
+    "value": "26,704"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:10:00+02:00",
+    "value": "26,657"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:12:00+02:00",
+    "value": "26,61"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:14:00+02:00",
+    "value": "26,563"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:16:00+02:00",
+    "value": "26,516"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:18:00+02:00",
+    "value": "26,469"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:20:00+02:00",
+    "value": "26,422"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:22:00+02:00",
+    "value": "26,376"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:24:00+02:00",
+    "value": "26,329"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:26:00+02:00",
+    "value": "26,282"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:28:00+02:00",
+    "value": "26,235"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:30:00+02:00",
+    "value": "26,188"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:32:00+02:00",
+    "value": "26,141"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:34:00+02:00",
+    "value": "26,094"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:36:00+02:00",
+    "value": "26,047"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:38:00+02:00",
+    "value": "26"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:40:00+02:00",
+    "value": "25,954"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:42:00+02:00",
+    "value": "25,907"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:44:00+02:00",
+    "value": "25,86"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:46:00+02:00",
+    "value": "25,813"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:48:00+02:00",
+    "value": "25,766"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:50:00+02:00",
+    "value": "25,719"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:52:00+02:00",
+    "value": "25,672"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:54:00+02:00",
+    "value": "25,625"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:56:00+02:00",
+    "value": "25,578"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T00:58:00+02:00",
+    "value": "25,532"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:00:00+02:00",
+    "value": "25,485"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:02:00+02:00",
+    "value": "25,438"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:04:00+02:00",
+    "value": "25,391"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:06:00+02:00",
+    "value": "25,344"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:08:00+02:00",
+    "value": "25,297"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:10:00+02:00",
+    "value": "25,25"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:12:00+02:00",
+    "value": "25,203"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:14:00+02:00",
+    "value": "25,156"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:16:00+02:00",
+    "value": "25,11"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:18:00+02:00",
+    "value": "25,063"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:20:00+02:00",
+    "value": "25,016"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:22:00+02:00",
+    "value": "24,969"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:24:00+02:00",
+    "value": "24,922"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:26:00+02:00",
+    "value": "24,875"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:28:00+02:00",
+    "value": "24,828"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:30:00+02:00",
+    "value": "24,781"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:32:00+02:00",
+    "value": "24,734"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:34:00+02:00",
+    "value": "24,688"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:36:00+02:00",
+    "value": "24,641"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:38:00+02:00",
+    "value": "24,594"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:40:00+02:00",
+    "value": "24,547"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:42:00+02:00",
+    "value": "24,5"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:44:00+02:00",
+    "value": "24,5"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:46:00+02:00",
+    "value": "24,5"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:48:00+02:00",
+    "value": "24,467"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:50:00+02:00",
+    "value": "24,433"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:52:00+02:00",
+    "value": "24,4"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:54:00+02:00",
+    "value": "24,35"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:56:00+02:00",
+    "value": "24,3"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T01:58:00+02:00",
+    "value": "24,275"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:00:00+02:00",
+    "value": "24,25"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:02:00+02:00",
+    "value": "24,225"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:04:00+02:00",
+    "value": "24,2"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:06:00+02:00",
+    "value": "24,169"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:08:00+02:00",
+    "value": "24,138"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:10:00+02:00",
+    "value": "24,108"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:12:00+02:00",
+    "value": "24,077"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:14:00+02:00",
+    "value": "24,046"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:16:00+02:00",
+    "value": "24,015"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:18:00+02:00",
+    "value": "23,985"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:20:00+02:00",
+    "value": "23,954"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:22:00+02:00",
+    "value": "23,923"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:24:00+02:00",
+    "value": "23,892"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:26:00+02:00",
+    "value": "23,862"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:28:00+02:00",
+    "value": "23,831"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:30:00+02:00",
+    "value": "23,8"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:32:00+02:00",
+    "value": "23,769"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:34:00+02:00",
+    "value": "23,738"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:36:00+02:00",
+    "value": "23,708"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:38:00+02:00",
+    "value": "23,677"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:40:00+02:00",
+    "value": "23,646"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:42:00+02:00",
+    "value": "23,615"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:44:00+02:00",
+    "value": "23,585"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:46:00+02:00",
+    "value": "23,554"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:48:00+02:00",
+    "value": "23,523"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:50:00+02:00",
+    "value": "23,492"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:52:00+02:00",
+    "value": "23,462"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:54:00+02:00",
+    "value": "23,431"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:56:00+02:00",
+    "value": "23,4"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T02:58:00+02:00",
+    "value": "23,35"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T03:00:00+02:00",
+    "value": "23,3"
+  },
+  {
+    "series": "ruche-g2elab.S6",
+    "time": "2018-07-17T03:02:00+02:00",
+    "value": "23,3"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:16:00+02:00",
+    "value": "26,5"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:18:00+02:00",
+    "value": "26,6"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:20:00+02:00",
+    "value": "26,998"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:22:00+02:00",
+    "value": "27,395"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:24:00+02:00",
+    "value": "27,793"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:26:00+02:00",
+    "value": "28,19"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:28:00+02:00",
+    "value": "28,588"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:30:00+02:00",
+    "value": "28,985"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:32:00+02:00",
+    "value": "29,383"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:34:00+02:00",
+    "value": "29,78"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:36:00+02:00",
+    "value": "30,178"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:38:00+02:00",
+    "value": "30,576"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:40:00+02:00",
+    "value": "30,973"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:42:00+02:00",
+    "value": "31,371"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:44:00+02:00",
+    "value": "31,768"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:46:00+02:00",
+    "value": "32,166"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:48:00+02:00",
+    "value": "32,563"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:50:00+02:00",
+    "value": "32,961"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:52:00+02:00",
+    "value": "33,359"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:54:00+02:00",
+    "value": "33,756"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:56:00+02:00",
+    "value": "34,154"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T16:58:00+02:00",
+    "value": "34,551"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:00:00+02:00",
+    "value": "34,949"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:02:00+02:00",
+    "value": "35,346"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:04:00+02:00",
+    "value": "35,744"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:06:00+02:00",
+    "value": "36,141"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:08:00+02:00",
+    "value": "36,539"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:10:00+02:00",
+    "value": "36,937"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:12:00+02:00",
+    "value": "37,334"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:14:00+02:00",
+    "value": "37,732"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:16:00+02:00",
+    "value": "38,129"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:18:00+02:00",
+    "value": "38,527"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:20:00+02:00",
+    "value": "38,924"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:22:00+02:00",
+    "value": "39,322"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:24:00+02:00",
+    "value": "39,72"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:26:00+02:00",
+    "value": "40,117"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:28:00+02:00",
+    "value": "40,515"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:30:00+02:00",
+    "value": "40,912"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:32:00+02:00",
+    "value": "41,31"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:34:00+02:00",
+    "value": "41,707"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:36:00+02:00",
+    "value": "42,105"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:38:00+02:00",
+    "value": "42,502"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:40:00+02:00",
+    "value": "42,9"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:42:00+02:00",
+    "value": "42,824"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:44:00+02:00",
+    "value": "42,747"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:46:00+02:00",
+    "value": "42,671"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:48:00+02:00",
+    "value": "42,595"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:50:00+02:00",
+    "value": "42,518"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:52:00+02:00",
+    "value": "42,442"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:54:00+02:00",
+    "value": "42,366"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:56:00+02:00",
+    "value": "42,289"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T17:58:00+02:00",
+    "value": "42,213"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:00:00+02:00",
+    "value": "42,137"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:02:00+02:00",
+    "value": "42,06"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:04:00+02:00",
+    "value": "41,984"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:06:00+02:00",
+    "value": "41,907"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:08:00+02:00",
+    "value": "41,831"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:10:00+02:00",
+    "value": "41,755"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:12:00+02:00",
+    "value": "41,678"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:14:00+02:00",
+    "value": "41,602"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:16:00+02:00",
+    "value": "41,526"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:18:00+02:00",
+    "value": "41,449"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:20:00+02:00",
+    "value": "41,373"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:22:00+02:00",
+    "value": "41,297"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:24:00+02:00",
+    "value": "41,22"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:26:00+02:00",
+    "value": "41,144"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:28:00+02:00",
+    "value": "41,068"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:30:00+02:00",
+    "value": "40,991"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:32:00+02:00",
+    "value": "40,915"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:34:00+02:00",
+    "value": "40,839"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:36:00+02:00",
+    "value": "40,762"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:38:00+02:00",
+    "value": "40,686"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:40:00+02:00",
+    "value": "40,61"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:42:00+02:00",
+    "value": "40,533"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:44:00+02:00",
+    "value": "40,457"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:46:00+02:00",
+    "value": "40,38"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:48:00+02:00",
+    "value": "40,304"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:50:00+02:00",
+    "value": "40,228"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:52:00+02:00",
+    "value": "40,151"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:54:00+02:00",
+    "value": "40,075"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:56:00+02:00",
+    "value": "39,999"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T18:58:00+02:00",
+    "value": "39,922"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:00:00+02:00",
+    "value": "39,846"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:02:00+02:00",
+    "value": "39,77"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:04:00+02:00",
+    "value": "39,693"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:06:00+02:00",
+    "value": "39,617"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:08:00+02:00",
+    "value": "39,541"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:10:00+02:00",
+    "value": "39,464"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:12:00+02:00",
+    "value": "39,388"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:14:00+02:00",
+    "value": "39,312"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:16:00+02:00",
+    "value": "39,235"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:18:00+02:00",
+    "value": "39,159"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:20:00+02:00",
+    "value": "39,083"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:22:00+02:00",
+    "value": "39,006"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:24:00+02:00",
+    "value": "38,93"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:26:00+02:00",
+    "value": "38,854"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:28:00+02:00",
+    "value": "38,777"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:30:00+02:00",
+    "value": "38,701"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:32:00+02:00",
+    "value": "38,624"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:34:00+02:00",
+    "value": "38,548"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:36:00+02:00",
+    "value": "38,472"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:38:00+02:00",
+    "value": "38,395"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:40:00+02:00",
+    "value": "38,319"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:42:00+02:00",
+    "value": "38,243"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:44:00+02:00",
+    "value": "38,166"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:46:00+02:00",
+    "value": "38,09"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:48:00+02:00",
+    "value": "38,014"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:50:00+02:00",
+    "value": "37,937"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:52:00+02:00",
+    "value": "37,861"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:54:00+02:00",
+    "value": "37,785"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:56:00+02:00",
+    "value": "37,708"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T19:58:00+02:00",
+    "value": "37,632"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:00:00+02:00",
+    "value": "37,556"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:02:00+02:00",
+    "value": "37,479"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:04:00+02:00",
+    "value": "37,403"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:06:00+02:00",
+    "value": "37,327"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:08:00+02:00",
+    "value": "37,25"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:10:00+02:00",
+    "value": "37,174"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:12:00+02:00",
+    "value": "37,098"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:14:00+02:00",
+    "value": "37,021"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:16:00+02:00",
+    "value": "36,945"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:18:00+02:00",
+    "value": "36,868"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:20:00+02:00",
+    "value": "36,792"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:22:00+02:00",
+    "value": "36,716"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:24:00+02:00",
+    "value": "36,639"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:26:00+02:00",
+    "value": "36,563"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:28:00+02:00",
+    "value": "36,487"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:30:00+02:00",
+    "value": "36,41"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:32:00+02:00",
+    "value": "36,334"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:34:00+02:00",
+    "value": "36,258"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:36:00+02:00",
+    "value": "36,181"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:38:00+02:00",
+    "value": "36,105"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:40:00+02:00",
+    "value": "36,029"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:42:00+02:00",
+    "value": "35,952"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:44:00+02:00",
+    "value": "35,876"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:46:00+02:00",
+    "value": "35,8"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:48:00+02:00",
+    "value": "35,723"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:50:00+02:00",
+    "value": "35,647"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:52:00+02:00",
+    "value": "35,571"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:54:00+02:00",
+    "value": "35,494"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:56:00+02:00",
+    "value": "35,418"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T20:58:00+02:00",
+    "value": "35,341"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:00:00+02:00",
+    "value": "35,265"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:02:00+02:00",
+    "value": "35,189"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:04:00+02:00",
+    "value": "35,112"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:06:00+02:00",
+    "value": "35,036"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:08:00+02:00",
+    "value": "34,96"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:10:00+02:00",
+    "value": "34,883"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:12:00+02:00",
+    "value": "34,807"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:14:00+02:00",
+    "value": "34,731"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:16:00+02:00",
+    "value": "34,654"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:18:00+02:00",
+    "value": "34,578"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:20:00+02:00",
+    "value": "34,502"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:22:00+02:00",
+    "value": "34,425"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:24:00+02:00",
+    "value": "34,349"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:26:00+02:00",
+    "value": "34,273"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:28:00+02:00",
+    "value": "34,196"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:30:00+02:00",
+    "value": "34,12"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:32:00+02:00",
+    "value": "34,044"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:34:00+02:00",
+    "value": "33,967"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:36:00+02:00",
+    "value": "33,891"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:38:00+02:00",
+    "value": "33,815"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:40:00+02:00",
+    "value": "33,738"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:42:00+02:00",
+    "value": "33,662"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:44:00+02:00",
+    "value": "33,585"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:46:00+02:00",
+    "value": "33,509"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:48:00+02:00",
+    "value": "33,433"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:50:00+02:00",
+    "value": "33,356"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:52:00+02:00",
+    "value": "33,28"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:54:00+02:00",
+    "value": "33,204"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:56:00+02:00",
+    "value": "33,127"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T21:58:00+02:00",
+    "value": "33,051"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:00:00+02:00",
+    "value": "32,975"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:02:00+02:00",
+    "value": "32,898"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:04:00+02:00",
+    "value": "32,822"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:06:00+02:00",
+    "value": "32,746"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:08:00+02:00",
+    "value": "32,669"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:10:00+02:00",
+    "value": "32,593"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:12:00+02:00",
+    "value": "32,517"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:14:00+02:00",
+    "value": "32,44"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:16:00+02:00",
+    "value": "32,364"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:18:00+02:00",
+    "value": "32,288"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:20:00+02:00",
+    "value": "32,211"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:22:00+02:00",
+    "value": "32,135"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:24:00+02:00",
+    "value": "32,059"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:26:00+02:00",
+    "value": "31,982"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:28:00+02:00",
+    "value": "31,906"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:30:00+02:00",
+    "value": "31,829"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:32:00+02:00",
+    "value": "31,753"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:34:00+02:00",
+    "value": "31,677"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:36:00+02:00",
+    "value": "31,6"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:38:00+02:00",
+    "value": "31,524"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:40:00+02:00",
+    "value": "31,448"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:42:00+02:00",
+    "value": "31,371"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:44:00+02:00",
+    "value": "31,295"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:46:00+02:00",
+    "value": "31,219"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:48:00+02:00",
+    "value": "31,142"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:50:00+02:00",
+    "value": "31,066"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:52:00+02:00",
+    "value": "30,99"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:54:00+02:00",
+    "value": "30,913"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:56:00+02:00",
+    "value": "30,837"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T22:58:00+02:00",
+    "value": "30,761"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:00:00+02:00",
+    "value": "30,684"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:02:00+02:00",
+    "value": "30,608"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:04:00+02:00",
+    "value": "30,532"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:06:00+02:00",
+    "value": "30,455"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:08:00+02:00",
+    "value": "30,379"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:10:00+02:00",
+    "value": "30,302"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:12:00+02:00",
+    "value": "30,226"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:14:00+02:00",
+    "value": "30,15"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:16:00+02:00",
+    "value": "30,073"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:18:00+02:00",
+    "value": "29,997"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:20:00+02:00",
+    "value": "29,921"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:22:00+02:00",
+    "value": "29,844"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:24:00+02:00",
+    "value": "29,768"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:26:00+02:00",
+    "value": "29,692"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:28:00+02:00",
+    "value": "29,615"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:30:00+02:00",
+    "value": "29,539"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:32:00+02:00",
+    "value": "29,463"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:34:00+02:00",
+    "value": "29,386"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:36:00+02:00",
+    "value": "29,31"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:38:00+02:00",
+    "value": "29,234"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:40:00+02:00",
+    "value": "29,157"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:42:00+02:00",
+    "value": "29,081"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:44:00+02:00",
+    "value": "29,005"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:46:00+02:00",
+    "value": "28,928"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:48:00+02:00",
+    "value": "28,852"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:50:00+02:00",
+    "value": "28,776"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:52:00+02:00",
+    "value": "28,699"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:54:00+02:00",
+    "value": "28,623"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:56:00+02:00",
+    "value": "28,546"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-16T23:58:00+02:00",
+    "value": "28,47"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:00:00+02:00",
+    "value": "28,394"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:02:00+02:00",
+    "value": "28,317"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:04:00+02:00",
+    "value": "28,241"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:06:00+02:00",
+    "value": "28,165"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:08:00+02:00",
+    "value": "28,088"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:10:00+02:00",
+    "value": "28,012"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:12:00+02:00",
+    "value": "27,936"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:14:00+02:00",
+    "value": "27,859"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:16:00+02:00",
+    "value": "27,783"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:18:00+02:00",
+    "value": "27,707"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:20:00+02:00",
+    "value": "27,63"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:22:00+02:00",
+    "value": "27,554"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:24:00+02:00",
+    "value": "27,478"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:26:00+02:00",
+    "value": "27,401"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:28:00+02:00",
+    "value": "27,325"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:30:00+02:00",
+    "value": "27,249"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:32:00+02:00",
+    "value": "27,172"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:34:00+02:00",
+    "value": "27,096"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:36:00+02:00",
+    "value": "27,02"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:38:00+02:00",
+    "value": "26,943"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:40:00+02:00",
+    "value": "26,867"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:42:00+02:00",
+    "value": "26,79"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:44:00+02:00",
+    "value": "26,714"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:46:00+02:00",
+    "value": "26,638"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:48:00+02:00",
+    "value": "26,561"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:50:00+02:00",
+    "value": "26,485"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:52:00+02:00",
+    "value": "26,409"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:54:00+02:00",
+    "value": "26,332"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:56:00+02:00",
+    "value": "26,256"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T00:58:00+02:00",
+    "value": "26,18"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:00:00+02:00",
+    "value": "26,103"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:02:00+02:00",
+    "value": "26,027"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:04:00+02:00",
+    "value": "25,951"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:06:00+02:00",
+    "value": "25,874"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:08:00+02:00",
+    "value": "25,798"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:10:00+02:00",
+    "value": "25,722"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:12:00+02:00",
+    "value": "25,645"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:14:00+02:00",
+    "value": "25,569"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:16:00+02:00",
+    "value": "25,493"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:18:00+02:00",
+    "value": "25,416"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:20:00+02:00",
+    "value": "25,34"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:22:00+02:00",
+    "value": "25,263"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:24:00+02:00",
+    "value": "25,187"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:26:00+02:00",
+    "value": "25,111"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:28:00+02:00",
+    "value": "25,034"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:30:00+02:00",
+    "value": "24,958"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:32:00+02:00",
+    "value": "24,882"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:34:00+02:00",
+    "value": "24,805"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:36:00+02:00",
+    "value": "24,729"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:38:00+02:00",
+    "value": "24,653"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:40:00+02:00",
+    "value": "24,576"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:42:00+02:00",
+    "value": "24,5"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:44:00+02:00",
+    "value": "24,45"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:46:00+02:00",
+    "value": "24,4"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:48:00+02:00",
+    "value": "24,367"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:50:00+02:00",
+    "value": "24,333"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:52:00+02:00",
+    "value": "24,3"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:54:00+02:00",
+    "value": "24,3"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:56:00+02:00",
+    "value": "24,3"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T01:58:00+02:00",
+    "value": "24,25"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:00:00+02:00",
+    "value": "24,2"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:02:00+02:00",
+    "value": "24,15"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:04:00+02:00",
+    "value": "24,1"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:06:00+02:00",
+    "value": "24,069"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:08:00+02:00",
+    "value": "24,038"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:10:00+02:00",
+    "value": "24,008"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:12:00+02:00",
+    "value": "23,977"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:14:00+02:00",
+    "value": "23,946"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:16:00+02:00",
+    "value": "23,915"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:18:00+02:00",
+    "value": "23,885"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:20:00+02:00",
+    "value": "23,854"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:22:00+02:00",
+    "value": "23,823"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:24:00+02:00",
+    "value": "23,792"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:26:00+02:00",
+    "value": "23,762"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:28:00+02:00",
+    "value": "23,731"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:30:00+02:00",
+    "value": "23,7"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:32:00+02:00",
+    "value": "23,669"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:34:00+02:00",
+    "value": "23,638"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:36:00+02:00",
+    "value": "23,608"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:38:00+02:00",
+    "value": "23,577"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:40:00+02:00",
+    "value": "23,546"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:42:00+02:00",
+    "value": "23,515"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:44:00+02:00",
+    "value": "23,485"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:46:00+02:00",
+    "value": "23,454"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:48:00+02:00",
+    "value": "23,423"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:50:00+02:00",
+    "value": "23,392"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:52:00+02:00",
+    "value": "23,362"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:54:00+02:00",
+    "value": "23,331"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:56:00+02:00",
+    "value": "23,3"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T02:58:00+02:00",
+    "value": "23,3"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T03:00:00+02:00",
+    "value": "23,3"
+  },
+  {
+    "series": "ruche-g2elab.S13",
+    "time": "2018-07-17T03:02:00+02:00",
+    "value": "23,2"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:16:00+02:00",
+    "value": "26,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:18:00+02:00",
+    "value": "26,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:20:00+02:00",
+    "value": "26,641"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:22:00+02:00",
+    "value": "26,883"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:24:00+02:00",
+    "value": "27,124"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:26:00+02:00",
+    "value": "27,366"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:28:00+02:00",
+    "value": "27,607"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:30:00+02:00",
+    "value": "27,849"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:32:00+02:00",
+    "value": "28,09"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:34:00+02:00",
+    "value": "28,332"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:36:00+02:00",
+    "value": "28,573"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:38:00+02:00",
+    "value": "28,815"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:40:00+02:00",
+    "value": "29,056"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:42:00+02:00",
+    "value": "29,298"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:44:00+02:00",
+    "value": "29,539"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:46:00+02:00",
+    "value": "29,78"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:48:00+02:00",
+    "value": "30,022"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:50:00+02:00",
+    "value": "30,263"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:52:00+02:00",
+    "value": "30,505"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:54:00+02:00",
+    "value": "30,746"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:56:00+02:00",
+    "value": "30,988"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T16:58:00+02:00",
+    "value": "31,229"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:00:00+02:00",
+    "value": "31,471"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:02:00+02:00",
+    "value": "31,712"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:04:00+02:00",
+    "value": "31,954"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:06:00+02:00",
+    "value": "32,195"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:08:00+02:00",
+    "value": "32,437"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:10:00+02:00",
+    "value": "32,678"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:12:00+02:00",
+    "value": "32,92"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:14:00+02:00",
+    "value": "33,161"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:16:00+02:00",
+    "value": "33,402"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:18:00+02:00",
+    "value": "33,644"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:20:00+02:00",
+    "value": "33,885"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:22:00+02:00",
+    "value": "34,127"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:24:00+02:00",
+    "value": "34,368"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:26:00+02:00",
+    "value": "34,61"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:28:00+02:00",
+    "value": "34,851"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:30:00+02:00",
+    "value": "35,093"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:32:00+02:00",
+    "value": "35,334"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:34:00+02:00",
+    "value": "35,576"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:36:00+02:00",
+    "value": "35,817"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:38:00+02:00",
+    "value": "36,059"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:40:00+02:00",
+    "value": "36,3"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:42:00+02:00",
+    "value": "36,251"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:44:00+02:00",
+    "value": "36,202"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:46:00+02:00",
+    "value": "36,153"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:48:00+02:00",
+    "value": "36,104"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:50:00+02:00",
+    "value": "36,055"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:52:00+02:00",
+    "value": "36,006"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:54:00+02:00",
+    "value": "35,957"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:56:00+02:00",
+    "value": "35,908"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T17:58:00+02:00",
+    "value": "35,859"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:00:00+02:00",
+    "value": "35,81"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:02:00+02:00",
+    "value": "35,761"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:04:00+02:00",
+    "value": "35,712"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:06:00+02:00",
+    "value": "35,663"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:08:00+02:00",
+    "value": "35,615"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:10:00+02:00",
+    "value": "35,566"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:12:00+02:00",
+    "value": "35,517"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:14:00+02:00",
+    "value": "35,468"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:16:00+02:00",
+    "value": "35,419"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:18:00+02:00",
+    "value": "35,37"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:20:00+02:00",
+    "value": "35,321"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:22:00+02:00",
+    "value": "35,272"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:24:00+02:00",
+    "value": "35,223"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:26:00+02:00",
+    "value": "35,174"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:28:00+02:00",
+    "value": "35,125"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:30:00+02:00",
+    "value": "35,076"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:32:00+02:00",
+    "value": "35,027"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:34:00+02:00",
+    "value": "34,978"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:36:00+02:00",
+    "value": "34,929"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:38:00+02:00",
+    "value": "34,88"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:40:00+02:00",
+    "value": "34,831"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:42:00+02:00",
+    "value": "34,782"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:44:00+02:00",
+    "value": "34,733"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:46:00+02:00",
+    "value": "34,684"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:48:00+02:00",
+    "value": "34,635"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:50:00+02:00",
+    "value": "34,586"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:52:00+02:00",
+    "value": "34,537"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:54:00+02:00",
+    "value": "34,488"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:56:00+02:00",
+    "value": "34,439"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T18:58:00+02:00",
+    "value": "34,39"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:00:00+02:00",
+    "value": "34,341"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:02:00+02:00",
+    "value": "34,293"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:04:00+02:00",
+    "value": "34,244"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:06:00+02:00",
+    "value": "34,195"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:08:00+02:00",
+    "value": "34,146"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:10:00+02:00",
+    "value": "34,097"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:12:00+02:00",
+    "value": "34,048"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:14:00+02:00",
+    "value": "33,999"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:16:00+02:00",
+    "value": "33,95"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:18:00+02:00",
+    "value": "33,901"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:20:00+02:00",
+    "value": "33,852"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:22:00+02:00",
+    "value": "33,803"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:24:00+02:00",
+    "value": "33,754"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:26:00+02:00",
+    "value": "33,705"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:28:00+02:00",
+    "value": "33,656"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:30:00+02:00",
+    "value": "33,607"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:32:00+02:00",
+    "value": "33,558"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:34:00+02:00",
+    "value": "33,509"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:36:00+02:00",
+    "value": "33,46"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:38:00+02:00",
+    "value": "33,411"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:40:00+02:00",
+    "value": "33,362"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:42:00+02:00",
+    "value": "33,313"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:44:00+02:00",
+    "value": "33,264"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:46:00+02:00",
+    "value": "33,215"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:48:00+02:00",
+    "value": "33,166"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:50:00+02:00",
+    "value": "33,117"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:52:00+02:00",
+    "value": "33,068"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:54:00+02:00",
+    "value": "33,02"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:56:00+02:00",
+    "value": "32,971"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T19:58:00+02:00",
+    "value": "32,922"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:00:00+02:00",
+    "value": "32,873"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:02:00+02:00",
+    "value": "32,824"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:04:00+02:00",
+    "value": "32,775"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:06:00+02:00",
+    "value": "32,726"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:08:00+02:00",
+    "value": "32,677"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:10:00+02:00",
+    "value": "32,628"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:12:00+02:00",
+    "value": "32,579"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:14:00+02:00",
+    "value": "32,53"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:16:00+02:00",
+    "value": "32,481"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:18:00+02:00",
+    "value": "32,432"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:20:00+02:00",
+    "value": "32,383"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:22:00+02:00",
+    "value": "32,334"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:24:00+02:00",
+    "value": "32,285"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:26:00+02:00",
+    "value": "32,236"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:28:00+02:00",
+    "value": "32,187"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:30:00+02:00",
+    "value": "32,138"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:32:00+02:00",
+    "value": "32,089"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:34:00+02:00",
+    "value": "32,04"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:36:00+02:00",
+    "value": "31,991"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:38:00+02:00",
+    "value": "31,942"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:40:00+02:00",
+    "value": "31,893"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:42:00+02:00",
+    "value": "31,844"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:44:00+02:00",
+    "value": "31,795"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:46:00+02:00",
+    "value": "31,746"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:48:00+02:00",
+    "value": "31,698"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:50:00+02:00",
+    "value": "31,649"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:52:00+02:00",
+    "value": "31,6"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:54:00+02:00",
+    "value": "31,551"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:56:00+02:00",
+    "value": "31,502"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T20:58:00+02:00",
+    "value": "31,453"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:00:00+02:00",
+    "value": "31,404"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:02:00+02:00",
+    "value": "31,355"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:04:00+02:00",
+    "value": "31,306"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:06:00+02:00",
+    "value": "31,257"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:08:00+02:00",
+    "value": "31,208"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:10:00+02:00",
+    "value": "31,159"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:12:00+02:00",
+    "value": "31,11"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:14:00+02:00",
+    "value": "31,061"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:16:00+02:00",
+    "value": "31,012"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:18:00+02:00",
+    "value": "30,963"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:20:00+02:00",
+    "value": "30,914"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:22:00+02:00",
+    "value": "30,865"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:24:00+02:00",
+    "value": "30,816"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:26:00+02:00",
+    "value": "30,767"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:28:00+02:00",
+    "value": "30,718"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:30:00+02:00",
+    "value": "30,669"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:32:00+02:00",
+    "value": "30,62"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:34:00+02:00",
+    "value": "30,571"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:36:00+02:00",
+    "value": "30,522"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:38:00+02:00",
+    "value": "30,473"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:40:00+02:00",
+    "value": "30,424"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:42:00+02:00",
+    "value": "30,376"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:44:00+02:00",
+    "value": "30,327"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:46:00+02:00",
+    "value": "30,278"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:48:00+02:00",
+    "value": "30,229"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:50:00+02:00",
+    "value": "30,18"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:52:00+02:00",
+    "value": "30,131"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:54:00+02:00",
+    "value": "30,082"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:56:00+02:00",
+    "value": "30,033"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T21:58:00+02:00",
+    "value": "29,984"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:00:00+02:00",
+    "value": "29,935"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:02:00+02:00",
+    "value": "29,886"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:04:00+02:00",
+    "value": "29,837"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:06:00+02:00",
+    "value": "29,788"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:08:00+02:00",
+    "value": "29,739"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:10:00+02:00",
+    "value": "29,69"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:12:00+02:00",
+    "value": "29,641"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:14:00+02:00",
+    "value": "29,592"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:16:00+02:00",
+    "value": "29,543"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:18:00+02:00",
+    "value": "29,494"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:20:00+02:00",
+    "value": "29,445"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:22:00+02:00",
+    "value": "29,396"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:24:00+02:00",
+    "value": "29,347"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:26:00+02:00",
+    "value": "29,298"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:28:00+02:00",
+    "value": "29,249"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:30:00+02:00",
+    "value": "29,2"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:32:00+02:00",
+    "value": "29,151"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:34:00+02:00",
+    "value": "29,102"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:36:00+02:00",
+    "value": "29,054"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:38:00+02:00",
+    "value": "29,005"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:40:00+02:00",
+    "value": "28,956"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:42:00+02:00",
+    "value": "28,907"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:44:00+02:00",
+    "value": "28,858"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:46:00+02:00",
+    "value": "28,809"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:48:00+02:00",
+    "value": "28,76"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:50:00+02:00",
+    "value": "28,711"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:52:00+02:00",
+    "value": "28,662"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:54:00+02:00",
+    "value": "28,613"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:56:00+02:00",
+    "value": "28,564"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T22:58:00+02:00",
+    "value": "28,515"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:00:00+02:00",
+    "value": "28,466"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:02:00+02:00",
+    "value": "28,417"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:04:00+02:00",
+    "value": "28,368"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:06:00+02:00",
+    "value": "28,319"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:08:00+02:00",
+    "value": "28,27"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:10:00+02:00",
+    "value": "28,221"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:12:00+02:00",
+    "value": "28,172"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:14:00+02:00",
+    "value": "28,123"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:16:00+02:00",
+    "value": "28,074"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:18:00+02:00",
+    "value": "28,025"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:20:00+02:00",
+    "value": "27,976"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:22:00+02:00",
+    "value": "27,927"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:24:00+02:00",
+    "value": "27,878"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:26:00+02:00",
+    "value": "27,829"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:28:00+02:00",
+    "value": "27,78"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:30:00+02:00",
+    "value": "27,732"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:32:00+02:00",
+    "value": "27,683"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:34:00+02:00",
+    "value": "27,634"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:36:00+02:00",
+    "value": "27,585"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:38:00+02:00",
+    "value": "27,536"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:40:00+02:00",
+    "value": "27,487"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:42:00+02:00",
+    "value": "27,438"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:44:00+02:00",
+    "value": "27,389"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:46:00+02:00",
+    "value": "27,34"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:48:00+02:00",
+    "value": "27,291"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:50:00+02:00",
+    "value": "27,242"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:52:00+02:00",
+    "value": "27,193"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:54:00+02:00",
+    "value": "27,144"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:56:00+02:00",
+    "value": "27,095"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-16T23:58:00+02:00",
+    "value": "27,046"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:00:00+02:00",
+    "value": "26,997"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:02:00+02:00",
+    "value": "26,948"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:04:00+02:00",
+    "value": "26,899"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:06:00+02:00",
+    "value": "26,85"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:08:00+02:00",
+    "value": "26,801"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:10:00+02:00",
+    "value": "26,752"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:12:00+02:00",
+    "value": "26,703"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:14:00+02:00",
+    "value": "26,654"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:16:00+02:00",
+    "value": "26,605"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:18:00+02:00",
+    "value": "26,556"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:20:00+02:00",
+    "value": "26,507"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:22:00+02:00",
+    "value": "26,459"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:24:00+02:00",
+    "value": "26,41"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:26:00+02:00",
+    "value": "26,361"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:28:00+02:00",
+    "value": "26,312"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:30:00+02:00",
+    "value": "26,263"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:32:00+02:00",
+    "value": "26,214"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:34:00+02:00",
+    "value": "26,165"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:36:00+02:00",
+    "value": "26,116"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:38:00+02:00",
+    "value": "26,067"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:40:00+02:00",
+    "value": "26,018"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:42:00+02:00",
+    "value": "25,969"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:44:00+02:00",
+    "value": "25,92"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:46:00+02:00",
+    "value": "25,871"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:48:00+02:00",
+    "value": "25,822"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:50:00+02:00",
+    "value": "25,773"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:52:00+02:00",
+    "value": "25,724"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:54:00+02:00",
+    "value": "25,675"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:56:00+02:00",
+    "value": "25,626"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T00:58:00+02:00",
+    "value": "25,577"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:00:00+02:00",
+    "value": "25,528"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:02:00+02:00",
+    "value": "25,479"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:04:00+02:00",
+    "value": "25,43"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:06:00+02:00",
+    "value": "25,381"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:08:00+02:00",
+    "value": "25,332"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:10:00+02:00",
+    "value": "25,283"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:12:00+02:00",
+    "value": "25,234"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:14:00+02:00",
+    "value": "25,185"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:16:00+02:00",
+    "value": "25,137"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:18:00+02:00",
+    "value": "25,088"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:20:00+02:00",
+    "value": "25,039"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:22:00+02:00",
+    "value": "24,99"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:24:00+02:00",
+    "value": "24,941"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:26:00+02:00",
+    "value": "24,892"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:28:00+02:00",
+    "value": "24,843"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:30:00+02:00",
+    "value": "24,794"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:32:00+02:00",
+    "value": "24,745"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:34:00+02:00",
+    "value": "24,696"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:36:00+02:00",
+    "value": "24,647"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:38:00+02:00",
+    "value": "24,598"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:40:00+02:00",
+    "value": "24,549"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:42:00+02:00",
+    "value": "24,5"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:44:00+02:00",
+    "value": "24,45"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:46:00+02:00",
+    "value": "24,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:48:00+02:00",
+    "value": "24,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:50:00+02:00",
+    "value": "24,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:52:00+02:00",
+    "value": "24,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:54:00+02:00",
+    "value": "24,35"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:56:00+02:00",
+    "value": "24,3"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T01:58:00+02:00",
+    "value": "24,275"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:00:00+02:00",
+    "value": "24,25"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:02:00+02:00",
+    "value": "24,225"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:04:00+02:00",
+    "value": "24,2"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:06:00+02:00",
+    "value": "24,169"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:08:00+02:00",
+    "value": "24,138"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:10:00+02:00",
+    "value": "24,108"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:12:00+02:00",
+    "value": "24,077"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:14:00+02:00",
+    "value": "24,046"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:16:00+02:00",
+    "value": "24,015"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:18:00+02:00",
+    "value": "23,985"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:20:00+02:00",
+    "value": "23,954"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:22:00+02:00",
+    "value": "23,923"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:24:00+02:00",
+    "value": "23,892"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:26:00+02:00",
+    "value": "23,862"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:28:00+02:00",
+    "value": "23,831"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:30:00+02:00",
+    "value": "23,8"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:32:00+02:00",
+    "value": "23,769"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:34:00+02:00",
+    "value": "23,738"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:36:00+02:00",
+    "value": "23,708"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:38:00+02:00",
+    "value": "23,677"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:40:00+02:00",
+    "value": "23,646"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:42:00+02:00",
+    "value": "23,615"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:44:00+02:00",
+    "value": "23,585"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:46:00+02:00",
+    "value": "23,554"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:48:00+02:00",
+    "value": "23,523"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:50:00+02:00",
+    "value": "23,492"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:52:00+02:00",
+    "value": "23,462"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:54:00+02:00",
+    "value": "23,431"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:56:00+02:00",
+    "value": "23,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T02:58:00+02:00",
+    "value": "23,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T03:00:00+02:00",
+    "value": "23,4"
+  },
+  {
+    "series": "ruche-g2elab.S19",
+    "time": "2018-07-17T03:02:00+02:00",
+    "value": "23,3"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:16:00+02:00",
+    "value": "26,6"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:18:00+02:00",
+    "value": "26,6"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:20:00+02:00",
+    "value": "26,846"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:22:00+02:00",
+    "value": "27,093"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:24:00+02:00",
+    "value": "27,339"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:26:00+02:00",
+    "value": "27,585"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:28:00+02:00",
+    "value": "27,832"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:30:00+02:00",
+    "value": "28,078"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:32:00+02:00",
+    "value": "28,324"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:34:00+02:00",
+    "value": "28,571"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:36:00+02:00",
+    "value": "28,817"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:38:00+02:00",
+    "value": "29,063"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:40:00+02:00",
+    "value": "29,31"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:42:00+02:00",
+    "value": "29,556"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:44:00+02:00",
+    "value": "29,802"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:46:00+02:00",
+    "value": "30,049"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:48:00+02:00",
+    "value": "30,295"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:50:00+02:00",
+    "value": "30,541"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:52:00+02:00",
+    "value": "30,788"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:54:00+02:00",
+    "value": "31,034"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:56:00+02:00",
+    "value": "31,28"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T16:58:00+02:00",
+    "value": "31,527"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:00:00+02:00",
+    "value": "31,773"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:02:00+02:00",
+    "value": "32,02"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:04:00+02:00",
+    "value": "32,266"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:06:00+02:00",
+    "value": "32,512"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:08:00+02:00",
+    "value": "32,759"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:10:00+02:00",
+    "value": "33,005"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:12:00+02:00",
+    "value": "33,251"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:14:00+02:00",
+    "value": "33,498"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:16:00+02:00",
+    "value": "33,744"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:18:00+02:00",
+    "value": "33,99"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:20:00+02:00",
+    "value": "34,237"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:22:00+02:00",
+    "value": "34,483"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:24:00+02:00",
+    "value": "34,729"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:26:00+02:00",
+    "value": "34,976"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:28:00+02:00",
+    "value": "35,222"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:30:00+02:00",
+    "value": "35,468"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:32:00+02:00",
+    "value": "35,715"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:34:00+02:00",
+    "value": "35,961"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:36:00+02:00",
+    "value": "36,207"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:38:00+02:00",
+    "value": "36,454"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:40:00+02:00",
+    "value": "36,7"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:42:00+02:00",
+    "value": "36,65"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:44:00+02:00",
+    "value": "36,6"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:46:00+02:00",
+    "value": "36,551"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:48:00+02:00",
+    "value": "36,501"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:50:00+02:00",
+    "value": "36,451"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:52:00+02:00",
+    "value": "36,401"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:54:00+02:00",
+    "value": "36,351"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:56:00+02:00",
+    "value": "36,302"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T17:58:00+02:00",
+    "value": "36,252"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:00:00+02:00",
+    "value": "36,202"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:02:00+02:00",
+    "value": "36,152"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:04:00+02:00",
+    "value": "36,102"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:06:00+02:00",
+    "value": "36,053"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:08:00+02:00",
+    "value": "36,003"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:10:00+02:00",
+    "value": "35,953"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:12:00+02:00",
+    "value": "35,903"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:14:00+02:00",
+    "value": "35,854"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:16:00+02:00",
+    "value": "35,804"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:18:00+02:00",
+    "value": "35,754"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:20:00+02:00",
+    "value": "35,704"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:22:00+02:00",
+    "value": "35,654"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:24:00+02:00",
+    "value": "35,605"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:26:00+02:00",
+    "value": "35,555"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:28:00+02:00",
+    "value": "35,505"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:30:00+02:00",
+    "value": "35,455"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:32:00+02:00",
+    "value": "35,405"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:34:00+02:00",
+    "value": "35,356"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:36:00+02:00",
+    "value": "35,306"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:38:00+02:00",
+    "value": "35,256"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:40:00+02:00",
+    "value": "35,206"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:42:00+02:00",
+    "value": "35,156"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:44:00+02:00",
+    "value": "35,107"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:46:00+02:00",
+    "value": "35,057"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:48:00+02:00",
+    "value": "35,007"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:50:00+02:00",
+    "value": "34,957"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:52:00+02:00",
+    "value": "34,907"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:54:00+02:00",
+    "value": "34,858"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:56:00+02:00",
+    "value": "34,808"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T18:58:00+02:00",
+    "value": "34,758"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:00:00+02:00",
+    "value": "34,708"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:02:00+02:00",
+    "value": "34,659"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:04:00+02:00",
+    "value": "34,609"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:06:00+02:00",
+    "value": "34,559"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:08:00+02:00",
+    "value": "34,509"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:10:00+02:00",
+    "value": "34,459"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:12:00+02:00",
+    "value": "34,41"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:14:00+02:00",
+    "value": "34,36"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:16:00+02:00",
+    "value": "34,31"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:18:00+02:00",
+    "value": "34,26"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:20:00+02:00",
+    "value": "34,21"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:22:00+02:00",
+    "value": "34,161"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:24:00+02:00",
+    "value": "34,111"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:26:00+02:00",
+    "value": "34,061"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:28:00+02:00",
+    "value": "34,011"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:30:00+02:00",
+    "value": "33,961"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:32:00+02:00",
+    "value": "33,912"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:34:00+02:00",
+    "value": "33,862"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:36:00+02:00",
+    "value": "33,812"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:38:00+02:00",
+    "value": "33,762"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:40:00+02:00",
+    "value": "33,712"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:42:00+02:00",
+    "value": "33,663"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:44:00+02:00",
+    "value": "33,613"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:46:00+02:00",
+    "value": "33,563"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:48:00+02:00",
+    "value": "33,513"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:50:00+02:00",
+    "value": "33,463"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:52:00+02:00",
+    "value": "33,414"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:54:00+02:00",
+    "value": "33,364"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:56:00+02:00",
+    "value": "33,314"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T19:58:00+02:00",
+    "value": "33,264"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:00:00+02:00",
+    "value": "33,215"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:02:00+02:00",
+    "value": "33,165"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:04:00+02:00",
+    "value": "33,115"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:06:00+02:00",
+    "value": "33,065"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:08:00+02:00",
+    "value": "33,015"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:10:00+02:00",
+    "value": "32,966"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:12:00+02:00",
+    "value": "32,916"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:14:00+02:00",
+    "value": "32,866"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:16:00+02:00",
+    "value": "32,816"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:18:00+02:00",
+    "value": "32,766"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:20:00+02:00",
+    "value": "32,717"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:22:00+02:00",
+    "value": "32,667"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:24:00+02:00",
+    "value": "32,617"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:26:00+02:00",
+    "value": "32,567"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:28:00+02:00",
+    "value": "32,517"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:30:00+02:00",
+    "value": "32,468"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:32:00+02:00",
+    "value": "32,418"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:34:00+02:00",
+    "value": "32,368"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:36:00+02:00",
+    "value": "32,318"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:38:00+02:00",
+    "value": "32,268"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:40:00+02:00",
+    "value": "32,219"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:42:00+02:00",
+    "value": "32,169"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:44:00+02:00",
+    "value": "32,119"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:46:00+02:00",
+    "value": "32,069"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:48:00+02:00",
+    "value": "32,02"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:50:00+02:00",
+    "value": "31,97"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:52:00+02:00",
+    "value": "31,92"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:54:00+02:00",
+    "value": "31,87"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:56:00+02:00",
+    "value": "31,82"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T20:58:00+02:00",
+    "value": "31,771"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:00:00+02:00",
+    "value": "31,721"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:02:00+02:00",
+    "value": "31,671"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:04:00+02:00",
+    "value": "31,621"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:06:00+02:00",
+    "value": "31,571"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:08:00+02:00",
+    "value": "31,522"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:10:00+02:00",
+    "value": "31,472"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:12:00+02:00",
+    "value": "31,422"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:14:00+02:00",
+    "value": "31,372"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:16:00+02:00",
+    "value": "31,322"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:18:00+02:00",
+    "value": "31,273"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:20:00+02:00",
+    "value": "31,223"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:22:00+02:00",
+    "value": "31,173"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:24:00+02:00",
+    "value": "31,123"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:26:00+02:00",
+    "value": "31,073"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:28:00+02:00",
+    "value": "31,024"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:30:00+02:00",
+    "value": "30,974"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:32:00+02:00",
+    "value": "30,924"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:34:00+02:00",
+    "value": "30,874"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:36:00+02:00",
+    "value": "30,824"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:38:00+02:00",
+    "value": "30,775"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:40:00+02:00",
+    "value": "30,725"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:42:00+02:00",
+    "value": "30,675"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:44:00+02:00",
+    "value": "30,625"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:46:00+02:00",
+    "value": "30,576"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:48:00+02:00",
+    "value": "30,526"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:50:00+02:00",
+    "value": "30,476"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:52:00+02:00",
+    "value": "30,426"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:54:00+02:00",
+    "value": "30,376"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:56:00+02:00",
+    "value": "30,327"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T21:58:00+02:00",
+    "value": "30,277"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:00:00+02:00",
+    "value": "30,227"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:02:00+02:00",
+    "value": "30,177"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:04:00+02:00",
+    "value": "30,127"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:06:00+02:00",
+    "value": "30,078"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:08:00+02:00",
+    "value": "30,028"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:10:00+02:00",
+    "value": "29,978"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:12:00+02:00",
+    "value": "29,928"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:14:00+02:00",
+    "value": "29,878"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:16:00+02:00",
+    "value": "29,829"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:18:00+02:00",
+    "value": "29,779"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:20:00+02:00",
+    "value": "29,729"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:22:00+02:00",
+    "value": "29,679"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:24:00+02:00",
+    "value": "29,629"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:26:00+02:00",
+    "value": "29,58"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:28:00+02:00",
+    "value": "29,53"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:30:00+02:00",
+    "value": "29,48"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:32:00+02:00",
+    "value": "29,43"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:34:00+02:00",
+    "value": "29,38"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:36:00+02:00",
+    "value": "29,331"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:38:00+02:00",
+    "value": "29,281"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:40:00+02:00",
+    "value": "29,231"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:42:00+02:00",
+    "value": "29,181"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:44:00+02:00",
+    "value": "29,132"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:46:00+02:00",
+    "value": "29,082"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:48:00+02:00",
+    "value": "29,032"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:50:00+02:00",
+    "value": "28,982"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:52:00+02:00",
+    "value": "28,932"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:54:00+02:00",
+    "value": "28,883"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:56:00+02:00",
+    "value": "28,833"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T22:58:00+02:00",
+    "value": "28,783"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:00:00+02:00",
+    "value": "28,733"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:02:00+02:00",
+    "value": "28,683"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:04:00+02:00",
+    "value": "28,634"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:06:00+02:00",
+    "value": "28,584"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:08:00+02:00",
+    "value": "28,534"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:10:00+02:00",
+    "value": "28,484"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:12:00+02:00",
+    "value": "28,434"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:14:00+02:00",
+    "value": "28,385"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:16:00+02:00",
+    "value": "28,335"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:18:00+02:00",
+    "value": "28,285"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:20:00+02:00",
+    "value": "28,235"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:22:00+02:00",
+    "value": "28,185"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:24:00+02:00",
+    "value": "28,136"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:26:00+02:00",
+    "value": "28,086"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:28:00+02:00",
+    "value": "28,036"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:30:00+02:00",
+    "value": "27,986"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:32:00+02:00",
+    "value": "27,937"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:34:00+02:00",
+    "value": "27,887"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:36:00+02:00",
+    "value": "27,837"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:38:00+02:00",
+    "value": "27,787"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:40:00+02:00",
+    "value": "27,737"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:42:00+02:00",
+    "value": "27,688"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:44:00+02:00",
+    "value": "27,638"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:46:00+02:00",
+    "value": "27,588"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:48:00+02:00",
+    "value": "27,538"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:50:00+02:00",
+    "value": "27,488"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:52:00+02:00",
+    "value": "27,439"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:54:00+02:00",
+    "value": "27,389"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:56:00+02:00",
+    "value": "27,339"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-16T23:58:00+02:00",
+    "value": "27,289"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:00:00+02:00",
+    "value": "27,239"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:02:00+02:00",
+    "value": "27,19"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:04:00+02:00",
+    "value": "27,14"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:06:00+02:00",
+    "value": "27,09"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:08:00+02:00",
+    "value": "27,04"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:10:00+02:00",
+    "value": "26,99"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:12:00+02:00",
+    "value": "26,941"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:14:00+02:00",
+    "value": "26,891"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:16:00+02:00",
+    "value": "26,841"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:18:00+02:00",
+    "value": "26,791"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:20:00+02:00",
+    "value": "26,741"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:22:00+02:00",
+    "value": "26,692"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:24:00+02:00",
+    "value": "26,642"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:26:00+02:00",
+    "value": "26,592"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:28:00+02:00",
+    "value": "26,542"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:30:00+02:00",
+    "value": "26,493"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:32:00+02:00",
+    "value": "26,443"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:34:00+02:00",
+    "value": "26,393"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:36:00+02:00",
+    "value": "26,343"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:38:00+02:00",
+    "value": "26,293"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:40:00+02:00",
+    "value": "26,244"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:42:00+02:00",
+    "value": "26,194"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:44:00+02:00",
+    "value": "26,144"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:46:00+02:00",
+    "value": "26,094"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:48:00+02:00",
+    "value": "26,044"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:50:00+02:00",
+    "value": "25,995"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:52:00+02:00",
+    "value": "25,945"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:54:00+02:00",
+    "value": "25,895"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:56:00+02:00",
+    "value": "25,845"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T00:58:00+02:00",
+    "value": "25,795"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:00:00+02:00",
+    "value": "25,746"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:02:00+02:00",
+    "value": "25,696"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:04:00+02:00",
+    "value": "25,646"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:06:00+02:00",
+    "value": "25,596"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:08:00+02:00",
+    "value": "25,546"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:10:00+02:00",
+    "value": "25,497"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:12:00+02:00",
+    "value": "25,447"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:14:00+02:00",
+    "value": "25,397"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:16:00+02:00",
+    "value": "25,347"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:18:00+02:00",
+    "value": "25,298"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:20:00+02:00",
+    "value": "25,248"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:22:00+02:00",
+    "value": "25,198"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:24:00+02:00",
+    "value": "25,148"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:26:00+02:00",
+    "value": "25,098"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:28:00+02:00",
+    "value": "25,049"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:30:00+02:00",
+    "value": "24,999"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:32:00+02:00",
+    "value": "24,949"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:34:00+02:00",
+    "value": "24,899"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:36:00+02:00",
+    "value": "24,849"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:38:00+02:00",
+    "value": "24,8"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:40:00+02:00",
+    "value": "24,75"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:42:00+02:00",
+    "value": "24,7"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:44:00+02:00",
+    "value": "24,65"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:46:00+02:00",
+    "value": "24,6"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:48:00+02:00",
+    "value": "24,567"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:50:00+02:00",
+    "value": "24,533"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:52:00+02:00",
+    "value": "24,5"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:54:00+02:00",
+    "value": "24,5"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:56:00+02:00",
+    "value": "24,5"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T01:58:00+02:00",
+    "value": "24,475"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:00:00+02:00",
+    "value": "24,45"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:02:00+02:00",
+    "value": "24,425"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:04:00+02:00",
+    "value": "24,4"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:06:00+02:00",
+    "value": "24,369"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:08:00+02:00",
+    "value": "24,338"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:10:00+02:00",
+    "value": "24,308"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:12:00+02:00",
+    "value": "24,277"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:14:00+02:00",
+    "value": "24,246"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:16:00+02:00",
+    "value": "24,215"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:18:00+02:00",
+    "value": "24,185"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:20:00+02:00",
+    "value": "24,154"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:22:00+02:00",
+    "value": "24,123"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:24:00+02:00",
+    "value": "24,092"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:26:00+02:00",
+    "value": "24,062"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:28:00+02:00",
+    "value": "24,031"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:30:00+02:00",
+    "value": "24"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:32:00+02:00",
+    "value": "23,969"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:34:00+02:00",
+    "value": "23,938"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:36:00+02:00",
+    "value": "23,908"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:38:00+02:00",
+    "value": "23,877"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:40:00+02:00",
+    "value": "23,846"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:42:00+02:00",
+    "value": "23,815"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:44:00+02:00",
+    "value": "23,785"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:46:00+02:00",
+    "value": "23,754"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:48:00+02:00",
+    "value": "23,723"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:50:00+02:00",
+    "value": "23,692"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:52:00+02:00",
+    "value": "23,662"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:54:00+02:00",
+    "value": "23,631"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:56:00+02:00",
+    "value": "23,6"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T02:58:00+02:00",
+    "value": "23,55"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T03:00:00+02:00",
+    "value": "23,5"
+  },
+  {
+    "series": "ruche-g2elab.S26",
+    "time": "2018-07-17T03:02:00+02:00",
+    "value": "23,5"
+  }
+]
