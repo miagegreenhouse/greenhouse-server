@@ -28,7 +28,7 @@ module.exports = {
     DATABASE_MEASURMENT : process.env.INFLUX_DATABASE_MEASURMENT || "greenhouse_sensors"
   },
   alerts : {
-    webAppBaseURI : process.env.ALERT_WEBAPPBASE_URI || 'http://localhost',
+    webAppBaseURI : process.env.ALERT_WEBAPPBASE_URI || 'http://localhost:8100',
     from : process.env.ALERT_FROM ||'ne-pas-repondre@greenhouse.fr',
     maxHistory : process.env.ALERT_MAX_HISTORY || 100
   },

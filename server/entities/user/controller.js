@@ -81,11 +81,13 @@ class User extends ControllerBase {
         }
   	  });
   	} else {
+      logger.info(entity);
       return cb({"error": "Email or password missing"}, null);
     }
   }
 
   insertUser(entity, cb) {
+    logger.info(entity);
     this.beforeInsert(entity, (err, res) => {
       if (err) {
         return cb(err);

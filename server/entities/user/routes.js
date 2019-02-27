@@ -35,6 +35,7 @@ class User extends RouteBase {
         } else {
           entities.forEach((entity) => {
             delete entity.confirmPassword;
+            console.log(entity);
             this.ctrl.insertUser(entity, (err, res) => {
               if (err) {
                 logger.error(err);
